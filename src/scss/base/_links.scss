@@ -1,0 +1,33 @@
+@use '../abstracts/animations' as *;
+
+a {
+    color: $foreground--main;
+    transition: color 0.3s ease;
+
+    & + .link-underline {
+        height: 2px;
+        border-radius: 30px;
+        visibility: hidden;
+        background-color: $foreground--accent;
+    }
+
+    &:hover {
+        color: $foreground--accent;
+        & + .link-underline {
+            visibility: visible;
+            animation: linkUnderline 0.75s forwards;
+        }
+    }
+
+}
+
+@keyframes linkUnderline {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 105%;
+        height: 2px;
+    }
+}

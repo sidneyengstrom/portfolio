@@ -27,3 +27,13 @@
         transform: rotate(-9deg);
     }
 }
+
+@keyframes ctaStatic {
+    99% {
+        position: relative;
+    }
+
+    100% {
+        position: static;
+    }
+}

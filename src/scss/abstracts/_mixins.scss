@@ -3,3 +3,19 @@
     align-items: center;
     justify-content: center;
 }
+
+$bar-width: 1.75rem;
+$bar-height: 0.175rem;
+
+@mixin menu-bar-before-after {
+    content: "";
+    position: absolute;
+}
+
+@mixin menu-bar {
+    display: block;
+    height: $bar-height;
+    width: $bar-width;
+    background-color: $foreground--main;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
