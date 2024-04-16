@@ -37,7 +37,7 @@ function LandingInfo () {
             <div className="self-desc">
                 <Typewriter text={textToType} />
             </div>
-            <div className="cta">
+            <div className={`cta ${isTyping ? '' : 'show'}`}>
                 <button className="primary cta">See my work</button>
                 <button className="secondary cta">Learn about me</button>
             </div>
