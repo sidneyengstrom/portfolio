@@ -6,13 +6,23 @@ $text-dark: #1B1B1B;
 
 //typography
 $h1-sm: 3.25rem;
-$h1-lg: 11.25rem;
+$h1-m: 5rem;
+$h1-lg: 6rem;
 
 $h2-sm: 1.12rem;
-$h2-lg: 3.13rem;
+$h2-m: 1.5rem;
+$h2-lg: 2.15rem;
+
+$text-sm: 1rem;
+$text-m: 1.15rem;
+$text-lg: 1.3rem;
 
 //buttons + links
 $btn-link--hover: #B398EB;
 $btn-primary: 1.5px solid $foreground--main;
 $btn-secondary: 1.5px solid $foreground--accent;
 $btn-transition--hover: transform 0.5s ease, border 0.5s ease;
+
+//padding 
+$padding-sm: 1rem;
+$padding-lg: 2rem;
