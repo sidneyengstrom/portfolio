@@ -11,4 +11,8 @@ body {
     h2 {
         font-size: $h2-sm;
     }
+
+    .accent-text {
+        color: $foreground--accent;
+    }
 }
