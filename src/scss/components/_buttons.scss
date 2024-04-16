@@ -17,11 +17,6 @@ button {
     &.secondary {
         border: $btn-secondary;
         color: $foreground--accent;
-
-        &:hover {
-            border: $btn-primary;
-            color: $foreground--main;
-        }
     }
 
     &:hover {
