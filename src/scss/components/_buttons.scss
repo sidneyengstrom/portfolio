@@ -23,4 +23,8 @@ button {
         animation: btnHover 0.65s ease-in-out;
         cursor: pointer;
     }
+
+    @media(min-width: 70rem) {
+        font-size: $text-m;
+    }
 }

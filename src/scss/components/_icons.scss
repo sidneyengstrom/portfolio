@@ -23,4 +23,14 @@
             stroke: $foreground--accent;
         }
     }
+
+    @media (min-width: 70rem) {
+        width: 2.85rem;
+        height: 2.85rem;
+
+        svg {
+            width: 30px;
+            height: auto;
+        }
+    }
 }
