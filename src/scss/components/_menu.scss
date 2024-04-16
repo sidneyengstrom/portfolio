@@ -43,6 +43,10 @@ header {
                     z-index: 99;
                     display: flex;
                     flex-direction: column;
+
+                    @media (min-width: 70rem) {
+                        font-size: $text-m;
+                    }
                 }
             }
 
@@ -100,6 +104,10 @@ header {
                 justify-content: flex-end;
                 padding-right: 2rem;
                 gap: 2rem;
+                
+                @media (min-width: 70rem) {
+                    padding-right: 3rem;
+                }
             }
         }
         .menu {
