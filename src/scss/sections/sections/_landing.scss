@@ -3,7 +3,7 @@
 #landing {
     display: flex;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 $padding-sm;
 
     .landing-info {
         align-self: center;
@@ -18,6 +18,10 @@
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
+
+        @media(min-width: 70rem) {
+            gap: 1.2rem;
+        }
 
         .social-bar {
             height: 60vh;
@@ -41,5 +45,38 @@
             opacity: 1;
             animation: ctaStatic 1s forwards;
         }
+    }
+
+    @media (min-width: 40rem) {
+        h1 {
+            font-size: $h1-m;
+        }
+
+        h2 {
+            font-size: $h2-m;
+        }
+
+        .self-desc {
+            font-size: $text-m;
+            max-width: 70%;
+        }
+    }
+
+    @media (min-width: 70rem) {
+        h1 {
+            font-size: $h1-lg;
+        }
+
+        h2 {
+            font-size: $h2-lg;
+        }
+
+        .self-desc {
+            font-size: $text-lg;
+        }
+    }
+
+    @media (min-width: 100rem) {
+        padding: 0 $padding-lg;
     }
 }
