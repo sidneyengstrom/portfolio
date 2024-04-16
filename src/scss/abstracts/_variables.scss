@@ -1,0 +1,18 @@
+//colors
+$foreground--main: #fff;
+$foreground--accent: #B398EB;
+
+
+
+//typography
+$h1-sm: 3.25rem;
+$h1-lg: 11.25rem;
+
+$h2-sm: 1.12rem;
+$h2-lg: 3.13rem;
+
+//buttons + links
+$btn-link--hover: #B398EB;
+$btn-primary: 1.5px solid $foreground--main;
+$btn-secondary: 1.5px solid $foreground--accent;
+$btn-transition--hover: transform 0.5s ease, border 0.5s ease;
