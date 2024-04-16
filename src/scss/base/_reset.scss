@@ -81,6 +81,7 @@
   
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
@@ -333,6 +334,11 @@
   
   summary {
     display: list-item;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
   
   /* Misc
