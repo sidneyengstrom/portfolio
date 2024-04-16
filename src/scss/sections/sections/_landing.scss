@@ -1,3 +1,5 @@
+@use '../../abstracts/animations' as *;
+
 #landing {
     display: flex;
     gap: 1rem;
@@ -32,10 +34,12 @@
         position: relative;
         bottom: -160px;
         transition: opacity 1s ease, position 1s ease, bottom 1s ease;
-        
+
+
         &.show {
             bottom: 0;
             opacity: 1;
+            animation: ctaStatic 1s forwards;
         }
     }
 }
