@@ -1,0 +1,31 @@
+button {
+    padding: 0.5rem;
+    background-color: #00000000;
+    border-radius: 10px;
+    transition: $btn-transition--hover;
+
+    &.primary {
+        border: $btn-primary;
+        color: $foreground--main;
+
+        &:hover {
+            border: $btn-secondary;
+            color: $foreground--accent;
+        }
+    }
+
+    &.secondary {
+        border: $btn-secondary;
+        color: $foreground--accent;
+
+        &:hover {
+            border: $btn-primary;
+            color: $foreground--main;
+        }
+    }
+
+    &:hover {
+        animation: btnHover 0.65s ease-in-out;
+        cursor: pointer;
+    }
+}

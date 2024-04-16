@@ -1,0 +1,26 @@
+.social-icon {
+    @include centerFlex;
+    border-radius: 100%;
+    border: 2px solid white;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: transform 0.65s ease, border 1s ease;
+
+    a {
+        @include centerFlex;
+    }
+    svg {
+        transition: stroke 1s ease;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        border: 2px solid $foreground--accent;
+        animation: iconHover 0.65s ease-in-out;
+        cursor: pointer;
+
+        svg {
+            stroke: $foreground--accent;
+        }
+    }
+}
