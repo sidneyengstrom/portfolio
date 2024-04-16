@@ -1,7 +1,17 @@
+import React, { useState } from 'react';
+import ClipboardNotif from './ClipboardNotif';
+
 function Socials () {
+    const [showClipboardNotification, setShowClipboardNotification] = useState(false);
     const copyToClipboard = () => {
         const email = 'sidneyengstrom@gmail.com';
         navigator.clipboard.writeText(email);
+        setShowClipboardNotification(true);
+
+        setTimeout(() => {
+            setShowClipboardNotification(false);
+        }, 3000);
+
     }
     return (
         <div className="socials">
@@ -44,6 +54,7 @@ function Socials () {
                     <path d="M3 7l9 6l9 -6" />
                 </svg>
             </div>
+            <ClipboardNotif showNotification={showClipboardNotification} />
         </div>
     )
 }
