@@ -6,10 +6,19 @@ header {
 
     nav {
         ul {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-bottom: 0.75rem;
+            visibility: hidden;
+            position: relative;
+            bottom: -200px;
+            transition: bottom 0.65s ease, visibility 0.65s ease, opacity 0.25s ease;
+            opacity: 0;
         }
 
         .menu {
+            position: relative;
             &:hover {
                 .bar, .bar::before, .bar::after {
                     background-color: $foreground--accent;
@@ -34,10 +43,9 @@ header {
 
         &.show {
             ul {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-                padding-bottom: 0.75rem;
+                visibility: visible;
+                bottom: 0;
+                opacity: 1;
                 
                 li {
                     z-index: 99;
@@ -84,15 +92,16 @@ header {
         position: fixed;
         height: 100vh;
         width: 100vw;
-        top: 0;
+        top: 500px;
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to top, #000000 30%, #00000000);
         opacity: 0.95;
-
+        background: linear-gradient(to top, #000000 30%, #00000000);
+        transition: top 0.45s ease, visibility 0.45s ease;
         &.show {
             visibility: visible;
+            top: 0;
         }
     }
 
@@ -100,10 +109,15 @@ header {
         position: static;
         nav {
             ul {
+                visibility: visible;
                 display: flex;
                 justify-content: flex-end;
+                flex-direction: row;
                 padding-right: 2rem;
                 gap: 2rem;
+                position: static;
+                opacity: 1;
+                margin-bottom: 0;
                 
                 @media (min-width: 70rem) {
                     padding-right: 3rem;
