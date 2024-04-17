@@ -35,7 +35,7 @@ function Navigation() {
                     <span className="bar"></span>
                 </div>
             </nav>
-            <div className={`overlay ${isNavVisible ? 'show' : ''}`}></div>
+            <div className={`overlay ${isNavVisible ? 'show' : ''}`} onClick={toggleNav}></div>
         </header>
     )
 }
