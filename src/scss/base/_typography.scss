@@ -15,4 +15,24 @@ body {
     .accent-text {
         color: $foreground--accent;
     }
+
+    @media (min-width: 40rem) {
+        h1 {
+            font-size: $h1-m;
+        }
+
+        h2 {
+            font-size: $h2-m;
+        }
+    }
+
+    @media (min-width: 70rem) {
+        h1 {
+            font-size: $h1-lg;
+        }
+
+        h2 {
+            font-size: $h2-lg;
+        }
+    }
 }
