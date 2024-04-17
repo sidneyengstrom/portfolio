@@ -27,6 +27,10 @@
             height: 60vh;
             width: 3px;
             background-color: #ffffff;
+
+            @media (min-width: 40rem) {
+                height: 55vh;
+            }
         }
     }
 
