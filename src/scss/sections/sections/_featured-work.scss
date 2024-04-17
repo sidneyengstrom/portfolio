@@ -1,0 +1,57 @@
+#featured-work {
+
+    padding: 0 $padding-sm $padding-lg;
+
+    h2, h3, p {
+        margin: 0;
+    }
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
+
+        .project {
+            background: linear-gradient(to top, rgba(91, 91, 91, 0.7), rgba(74, 74, 74, 0.7));
+            padding: 0.75rem;
+            border-radius: 1.15rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            img {
+                border-radius: 0.35rem;
+                margin-bottom: 0.5rem;
+            }
+
+            > p {
+                color: $text-light;
+            }
+
+            .learn-more {
+                display: flex;
+                align-items: center;
+                svg {
+                    transition: stroke 0.3s ease;
+                }
+                &:hover {
+                    svg {
+                        stroke: $foreground--accent;
+                    }
+                }
+            }
+
+            .tech-used {
+                display: flex;
+                gap: 0.5rem;
+
+                p {
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 10px;
+                    border: 1.5px solid $text-light;
+                }
+            }
+        }
+    }
+}
