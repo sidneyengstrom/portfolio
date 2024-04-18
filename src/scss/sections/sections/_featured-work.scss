@@ -1,9 +1,18 @@
 #featured-work {
 
     padding: 0 $padding-sm $padding-lg;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
     h2, h3, p {
         margin: 0;
+    }
+
+    @media (min-width: 78.75rem) {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
     }
     .project-wrapper {
         display: flex;
@@ -11,7 +20,21 @@
         align-items: center;
         gap: 2rem;
         margin-top: 1rem;
-        overflow: hidden;
+
+        justify-self: center;
+
+        @media (min-width: 40rem) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 60rem) {
+            flex-wrap: nowrap;
+        }
+
+        @media (min-width: 78.75rem) {
+            max-width: 90%;
+        }
 
         .project {
             background: linear-gradient(to top, #5b5b5bb3, #4a4a4ab3);
@@ -61,8 +84,11 @@
             }
 
             .learn-more {
-                display: flex;
-                align-items: center;
+                width: fit-content;
+                a {
+                    display: flex;
+                    align-items: center;
+                }
 
                 svg {
                     transition: stroke 0.3s ease;
