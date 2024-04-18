@@ -90,15 +90,6 @@
                     display: flex;
                     align-items: center;
                 }
-
-                svg {
-                    transition: stroke 0.3s ease;
-                }
-                &:hover {
-                    svg {
-                        stroke: $foreground--accent;
-                    }
-                }
             }
 
             .tech-used {
