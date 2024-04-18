@@ -3,13 +3,17 @@
 #landing {
     display: flex;
     gap: 1rem;
-    padding: 0 $padding-sm;
+    padding: 0 $padding-sm $padding-lg;
 
     .landing-info {
         align-self: center;
         display: flex;
         flex-direction: column;
         gap: 1.25rem;
+
+        @media(min-width: 40rem) {
+            padding-top: 5rem;
+        }
     }
 
     .socials {

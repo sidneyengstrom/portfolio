@@ -106,21 +106,23 @@ header {
     }
 
     @media (min-width: 650px) {
-        position: static;
+        position: absolute;
+        top: 0;
+        right: 0;
         nav {
             ul {
                 visibility: visible;
                 display: flex;
                 justify-content: flex-end;
                 flex-direction: row;
-                padding-right: 2rem;
+                padding-right: 4rem;
                 gap: 2rem;
                 position: static;
                 opacity: 1;
                 margin-bottom: 0;
                 
                 @media (min-width: 70rem) {
-                    padding-right: 3rem;
+                    padding-right: 5rem;
                 }
             }
         }
