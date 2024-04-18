@@ -1,14 +1,39 @@
 import { projects } from '../project-data.js';
 import { Link } from 'react-router-dom';
+import { useRef, useEffect } from 'react';
 
 function FeaturedWork () {
+    const projectRefs = useRef([]);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+  
+      projectRefs.current.forEach((ref) => {
+        if (ref.current) {
+          observer.observe(ref.current);
+        }
+      });
+  
+      return () => {
+        observer.disconnect();
+      };
+    }, []);
     return (
         <section id="featured-work">
             <h2>/ My Work</h2>
             <div className="project-wrapper">
             {projects.map((project, index) => (
                 project.feature ? (
-                    <div className="project" key={index}>
+                    <div className={`project ${index % 2 === 0 ? 'right-swipe' : 'left-swipe'}`} key={index} ref={projectRefs.current[index] || (projectRefs.current[index] = useRef())}>
                         <img src={`/src/assets/images/${project.thumbsrc}`} alt={project.thumbalt} />
                         <h3>{project.title}</h3>
                         <p>{project.excerpt}</p>
