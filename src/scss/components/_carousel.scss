@@ -1,0 +1,33 @@
+#carousel {
+    margin: 1rem;
+    .react-multi-carousel-list {
+        overflow: visible;
+
+        .react-multi-carousel-item {
+            right: 10px;            
+            z-index: 100;
+            transition: transform 0.4s ease, opacity 0.4s ease, right 0.4s ease;
+
+            img {
+                border-radius: 0.65rem;
+                padding-right: -0.25rem;
+                box-shadow: 0 0 10px 2px #00000066;
+            }
+        }
+
+        .react-multi-carousel-item:not(.react-multi-carousel-item--active) {
+            z-index: 50;
+            right: 100px;
+            opacity: 0.25;
+            transform: scale(0.8);
+        }
+    }
+
+    .react-multiple-carousel__arrow--left {
+        left: 7px;
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: 27px;
+    }
+}
