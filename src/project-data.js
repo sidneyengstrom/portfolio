@@ -10,6 +10,8 @@ export const projects = [
         tech: ['React', 'Chakra UI'],
         feature: true,
         slug: 'take-five-movie-database',
+        carouselImgs: ['moviedb-main.png', 'take-five-posters.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselAlt: ['Coming soon placeholder image'],
     },
 
     {
@@ -22,6 +24,8 @@ export const projects = [
         tech: ['CSS', 'JavaScript'],
         feature: true,
         slug: 'discover-ottawa',
+        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselAlt: ['Coming soon placeholder image'],
     },
 
     {
@@ -35,6 +39,8 @@ export const projects = [
         tech: ['JavaScript', 'SASS'],
         feature: true,
         slug: 'vulcan',
+        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselAlt: ['Coming soon placeholder image'],
     },
 
     {
@@ -48,6 +54,8 @@ export const projects = [
         tech: ['WordPress', 'SASS', 'JavaScript'],
         feature: false,
         slug: 'under-construction',
+        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselAlt: ['Coming soon placeholder image'],
     },
 
     {
@@ -60,5 +68,7 @@ export const projects = [
         tech: ['CSS', 'JavaScript'],
         feature: false,
         slug: 'super-match',
+        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselAlt: ['Coming soon placeholder image'],
     },
 ]
