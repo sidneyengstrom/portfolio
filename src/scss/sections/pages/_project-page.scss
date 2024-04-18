@@ -1,5 +1,22 @@
 .project-page-wrapper {
     overflow: hidden;
     padding: 0.5rem;
+
+    .project-links {
+        padding: 0 $padding-sm;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+    }
 }
 
