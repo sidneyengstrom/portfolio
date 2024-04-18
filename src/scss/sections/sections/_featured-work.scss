@@ -11,14 +11,34 @@
         align-items: center;
         gap: 2rem;
         margin-top: 1rem;
+        overflow: hidden;
 
         .project {
-            background: linear-gradient(to top, rgba(91, 91, 91, 0.7), rgba(74, 74, 74, 0.7));
+            background: linear-gradient(to top, #5b5b5bb3, #4a4a4ab3);
             padding: 0.75rem;
             border-radius: 1.15rem;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
+            position: relative;
+            
+            &.right-swipe {
+                left: 135px;
+                transition: left 1s ease;
+
+                &.show {
+                    left: 0;
+                }
+            }
+
+            &.left-swipe {
+                right: 135px;
+                transition: right 1s ease;
+
+                &.show {
+                    right: 0;
+                }
+            }
 
             img {
                 border-radius: 0.35rem;
@@ -32,6 +52,7 @@
             .learn-more {
                 display: flex;
                 align-items: center;
+
                 svg {
                     transition: stroke 0.3s ease;
                 }
