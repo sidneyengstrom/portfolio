@@ -10,6 +10,10 @@
         display: flex;
         flex-direction: column;
         gap: 1.25rem;
+
+        @media(min-width: 40rem) {
+            padding-top: 5rem;
+        }
     }
 
     .socials {
