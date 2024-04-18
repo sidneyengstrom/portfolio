@@ -28,6 +28,17 @@
     }
 }
 
+@keyframes cardHover {
+    0%, 50%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+    }
+    25%, 75% {
+        transform: translateY(-3px) scale(1.005);
+        box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.4);
+    }
+}
+
 @keyframes ctaStatic {
     99% {
         position: relative;

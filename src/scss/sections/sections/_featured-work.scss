@@ -1,9 +1,18 @@
 #featured-work {
 
     padding: 0 $padding-sm $padding-lg;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
     h2, h3, p {
         margin: 0;
+    }
+
+    @media (min-width: 78.75rem) {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
     }
     .project-wrapper {
         display: flex;
@@ -11,7 +20,21 @@
         align-items: center;
         gap: 2rem;
         margin-top: 1rem;
-        overflow: hidden;
+
+        justify-self: center;
+
+        @media (min-width: 40rem) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 60rem) {
+            flex-wrap: nowrap;
+        }
+
+        @media (min-width: 78.75rem) {
+            max-width: 90%;
+        }
 
         .project {
             background: linear-gradient(to top, #5b5b5bb3, #4a4a4ab3);
@@ -21,6 +44,17 @@
             flex-direction: column;
             gap: 0.5rem;
             position: relative;
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+
+            &:hover {
+                background: linear-gradient(to top, #5b5b5bd9, #4a4a4ad9);
+                animation: cardHover 3.5s ease-in-out;
+                animation-iteration-count: 1000000;
+            }
+
+            @media (min-width: 40rem) {
+                max-width: 46%;
+            }
             
             &.right-swipe {
                 left: 135px;
@@ -41,8 +75,9 @@
             }
 
             img {
-                border-radius: 0.35rem;
+                border-radius: 0.45rem;
                 margin-bottom: 0.5rem;
+                box-shadow: 0 0 10px 2px #00000066;
             }
 
             > p {
@@ -50,8 +85,11 @@
             }
 
             .learn-more {
-                display: flex;
-                align-items: center;
+                width: fit-content;
+                a {
+                    display: flex;
+                    align-items: center;
+                }
 
                 svg {
                     transition: stroke 0.3s ease;
@@ -73,6 +111,25 @@
                     border: 1.5px solid $text-light;
                 }
             }
+        }
+    }
+
+    .see-more-btn {
+        padding: 0.5rem;
+        background-color: #00000000;
+        border-radius: 10px;
+        transition: $btn-transition--hover;
+        border: $btn-primary;
+        color: $foreground--main;
+        width: fit-content;
+        margin-top: 2rem;
+        justify-self: flex-end;
+        margin-right: 4rem;
+    
+        &:hover {
+            border: $btn-secondary;
+            color: $foreground--accent;
+            animation: btnHover 0.65s ease-in-out;
         }
     }
 }
