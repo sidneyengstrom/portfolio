@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '../project-data.js';
 import FeaturedCarousel from './FeaturedCarousel.jsx';
+import InfoSorting from './InfoSorting.jsx';
 
 function ProjectDetails() {
   
