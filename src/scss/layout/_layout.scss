@@ -1,0 +1,15 @@
+#root, header {
+    @media(min-width: 125rem) {
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        grid-template-rows: auto;
+
+        > * {
+            grid-column: 2/3;
+        }
+
+        footer {
+            grid-column: 1/4;
+        }
+    }
+}
