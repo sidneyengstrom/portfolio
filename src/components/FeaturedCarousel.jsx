@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '../project-data.js';
 import Carousel from 'react-multi-carousel';
@@ -8,10 +7,6 @@ function FeaturedCarousel() {
   
   const { slug } = useParams();
   const project = projects.find((project) => project.slug === slug);
-
-  if (!project) {
-    return <div>Project not found</div>;
-  }
 
   const responsive = {
     desktop: {
