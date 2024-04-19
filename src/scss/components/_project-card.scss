@@ -9,7 +9,7 @@
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
 
     &:hover {
-        background: linear-gradient(to top, #5b5b5bd9, #4a4a4ad9);
+        border: 2px solid $foreground--accent;
         animation: cardHover 3.5s ease-in-out;
         animation-iteration-count: 1000000;
     }
