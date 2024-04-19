@@ -32,7 +32,7 @@ function ProjectCard({ project, index }) {
         <div className={`project ${index % 2 === 0 ? 'left-swipe' : 'right-swipe'}`} ref={projectRef}>
             <img src={`/src/assets/images/${project.thumbsrc}`} alt={project.thumbalt} />
             <h3>{project.title}</h3>
-            <p>{project.excerpt}</p>
+            <p className='excerpt'>{project.excerpt}</p>
             <div className="learn-more">
                 <Link to={`/project/${project.slug}`}>
                     <p>Learn More</p>
