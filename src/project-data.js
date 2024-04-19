@@ -63,7 +63,7 @@ export const projects = [
         repo: false,
         repoLink: 'https://github.com/htpwebdesign/porterstudio-theme',
         liveSite: 'https://porterstudio.bcitwebdeveloper.ca',
-        featuredTech: ['WordPress', 'SASS', 'JavaScript'],
+        featuredTech: ['WordPress', 'SASS'],
         alltech: ['WordPress', 'HTML5', 'PHP', 'SASS / SCSS', 'JavaScript'],
         feature: false,
         slug: 'under-construction',
