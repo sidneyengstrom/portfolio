@@ -13,6 +13,10 @@
 
         @media(min-width: 40rem) {
             padding-top: 5rem;
+
+            .self-desc {
+                height: 60px;
+            }
         }
     }
 
@@ -66,7 +70,13 @@
 
         .self-desc {
             font-size: $text-m;
-            max-width: 70%;
+            max-width: 70rem;
+        }
+    }
+
+    @media (min-width: 45.75rem) {
+        .self-desc {
+            max-width: 40rem;
         }
     }
 
