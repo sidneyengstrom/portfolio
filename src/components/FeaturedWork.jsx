@@ -14,7 +14,7 @@ function FeaturedWork () {
                 ) : null
             ))}
             </div>
-            <Link to={`/projects`} className='see-more-btn'>See more</Link>
+            <Link to='/projects' className='see-more-btn'>See more</Link>
             
         </section>
     )
