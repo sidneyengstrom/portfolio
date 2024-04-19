@@ -11,7 +11,7 @@ function Navigation() {
             <nav className={isNavVisible ? 'show' : ''}>
                 <ul>
                     <li>
-                        <a href="#landing">Home</a>
+                        <a href="/">Home</a>
                         <span className="link-underline"></span>
                     </li>
                     <li>
