@@ -48,8 +48,8 @@ function FeaturedWork () {
                             </Link>
                         </div>
                         <div className="tech-used">
-                            {project.tech.map((tech, index) => (
-                                <p className='tech' key={index}>{tech}</p>
+                            {project.featuredTech.map((featuredTech, index) => (
+                                <p className='tech' key={index}>{featuredTech}</p>
                             ))}
                         </div>
                     </div>

@@ -12,11 +12,19 @@ a {
         background-color: $foreground--accent;
     }
 
+    svg {
+        transition: stroke 0.3s ease;
+    }
+
     &:hover {
         color: $foreground--accent;
         & + .link-underline {
             visibility: visible;
             animation: linkUnderline 0.75s forwards;
+        }
+        
+        svg {
+            stroke: $foreground--accent;
         }
     }
 
