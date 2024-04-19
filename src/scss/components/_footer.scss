@@ -1,0 +1,24 @@
+footer {
+    img {
+        opacity: 0.7;
+    }
+
+    .footer-content {
+        position: relative;
+        padding: 0 $padding-sm;
+        display: flex;
+        justify-content: center;
+
+        .content-wrapper {
+            position: absolute;
+            bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+
+            p, svg {
+                opacity: 0.7;
+            }
+        }
+    }
+}
