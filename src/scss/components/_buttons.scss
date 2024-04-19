@@ -3,18 +3,15 @@ button {
     background-color: #00000000;
     border-radius: 10px;
     transition: $btn-transition--hover;
+    border: $btn-primary;
+    color: $foreground--main;
 
-    &.primary {
-        border: $btn-primary;
-        color: $foreground--main;
-
-        &:hover {
-            border: $btn-secondary;
-            color: $foreground--accent;
-        }
+    &:hover {
+        border: $btn-secondary;
+        color: $foreground--accent;
     }
 
-    &.secondary {
+    &.secondary, &.active {
         border: $btn-secondary;
         color: $foreground--accent;
     }
