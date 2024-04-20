@@ -29,7 +29,7 @@ function ProjectCard({ project, index }) {
     }, [projectRef]);
 
     return (
-        <div className={`project ${index % 2 === 0 ? 'left-swipe' : 'right-swipe'}`} ref={projectRef}>
+        <div className={`project card-bg ${index % 2 === 0 ? 'left-swipe' : 'right-swipe'}`} ref={projectRef}>
             <img src={`/src/assets/images/${project.thumbsrc}`} alt={project.thumbalt} />
             <h3>{project.title}</h3>
             <p className='excerpt'>{project.excerpt}</p>
