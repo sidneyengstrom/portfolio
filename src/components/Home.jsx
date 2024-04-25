@@ -1,6 +1,7 @@
 import Landing from './Landing';
 import FeaturedWork from './FeaturedWork';
 import Skills from './Skills';
+import About from './About';
 
 function Home() {
     return (
@@ -8,7 +9,7 @@ function Home() {
             <Landing />
             <FeaturedWork />
             <Skills />
-            
+            <About />
         </>
     )
   }
