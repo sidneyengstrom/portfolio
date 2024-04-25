@@ -11,7 +11,7 @@ function About () {
                     <button className={activeSection === 'play' ? 'active' : ''}onClick={() => setActiveSection('play')}>Play</button>
                 </div>
                 <div className="about card-bg">
-                    <img src="/src/assets/images/self.png" alt="Photo of the developer."/>
+                    <img src="/src/assets/images/coming-soon.png" alt="Photo of the developer."/>
                     <h3>Sidney Engstrom</h3>
                     {activeSection === 'work' ? (
                         <>
