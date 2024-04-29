@@ -20,6 +20,7 @@
     
     
     @media (min-width: 40rem) {
+        padding-top: 5rem;
         flex-direction: row;
         flex-wrap: wrap;
 
@@ -53,7 +54,7 @@
         position: relative;
         top: 10rem;
         .project {
-            max-width: 15%;
+            max-width: 18%;
         }
     }
     
