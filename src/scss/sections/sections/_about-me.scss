@@ -1,8 +1,8 @@
-#about {
-    padding: 0 $padding-sm;
-    h2 {
-        margin-bottom: 1rem;
+#root #about {
+    @media(min-width: 60rem) {
+        padding-left: 0;
     }
+
     .about-wrapper {
         display: flex;
         flex-direction: column;
@@ -53,21 +53,6 @@
 
                 p:not(.text-light) {
                     grid-column: 1/3;
-                }
-            }
-
-            @media(min-width: 40rem) {
-                padding: 2rem;
-                position: relative;
-                grid-template-columns: 0.5fr 1.5fr;
-
-                img {
-                    max-width: 224px;
-                    grid-row: 1/4;
-                    margin-right: 1rem;
-                }
-                p:not(.text-light) {
-                    grid-column: 2/3;
                 }
             }
         }

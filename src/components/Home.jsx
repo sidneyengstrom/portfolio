@@ -8,8 +8,10 @@ function Home() {
         <>
             <Landing />
             <FeaturedWork />
-            <Skills />
-            <About />
+            <div className='skills-abt-wrapper'>
+                <Skills />
+                <About />
+            </div>
         </>
     )
   }
