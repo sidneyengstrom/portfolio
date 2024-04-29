@@ -1,0 +1,30 @@
+#contact {
+    padding: 0 $padding-sm;
+
+    .contact-link-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.15rem;
+
+        &:nth-of-type(2) {
+            margin-bottom: 0.5rem;
+        }
+            
+        .clickable {
+            display: flex;
+            align-items: center;
+            gap: 0.15rem;
+    
+            p, a {
+                color: $text-light;
+                cursor: pointer;
+                margin: 0;
+            }
+    
+            svg {
+                stroke: $text-light;
+            }
+        }
+    }
+    
+}
