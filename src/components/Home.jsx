@@ -4,10 +4,10 @@ import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
 
-function Home() {
+function Home({ darkMode, toggleDarkMode }) {
     return (
         <>
-            <Landing />
+            <Landing darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <FeaturedWork />
             <div className='skills-abt-wrapper'>
                 <Skills />

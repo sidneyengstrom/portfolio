@@ -1,4 +1,4 @@
-#root.dark-mode {
+#app-wrap.dark-mode {
     --background--main: $background--main;
     --foreground--main: $foreground--main;
     --foreground--accent: $foreground--accent;
@@ -11,7 +11,7 @@
     --btn-secondary: 1.5px solid $foreground--accent;
 }
 
-#root.light-mode {
+#app-wrap.light-mode {
     --background--main: $background-light--main;
     --foreground--main: $foreground-light--main;
     --foreground-accent: $foreground-light--accent;
