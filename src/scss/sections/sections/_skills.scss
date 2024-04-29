@@ -1,9 +1,8 @@
-#skills {
-    padding: 0 $padding-sm;
-
-    h2 {
-        margin: 1rem 0;
+#root #skills {
+    @media(min-width: 60rem) {
+        padding-right: 0;
     }
+
     .skill-wrapper {
         display: flex;
         flex-direction: column;
@@ -12,11 +11,6 @@
         .buttons {
             display: flex;
             gap: 0.5rem;
-        }
-
-        @media (min-width: 100rem) {
-            max-width: 80%;
-            margin: 0 auto;
         }
 
         .skill-card {
@@ -31,12 +25,6 @@
 
             @media(min-width: 40rem) {
                 grid-template-columns: repeat(3, 1fr);
-            }
-
-            @media(min-width: 60rem) {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
             }
 
             .skill {

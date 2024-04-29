@@ -1,5 +1,4 @@
-#all-work {
-    padding: 3rem $padding-sm;
+#root #all-work {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -8,54 +7,57 @@
     h2, h3, p {
         margin: 0;
     }
-}
 
-.project-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-    justify-self: center;
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+        justify-self: center;
+        
+        
+        @media (min-width: 40rem) {
+            padding-top: 5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
     
+            .project {
+                max-width: 47%;
+            }
+        }
     
-    @media (min-width: 40rem) {
-        flex-direction: row;
-        flex-wrap: wrap;
-
+        @media(min-width: 100rem) and (max-width:128rem){
+            max-width: 80%;
+            margin: 1rem auto 0;
+        }
+    
+        
+    
         .project {
-            max-width: 47%;
-        }
-    }
-
-    @media(min-width: 100rem) and (max-width:128rem){
-        max-width: 80%;
-        margin: 1rem auto 0;
-    }
-
     
-
-    .project {
-
-        .excerpt {
-            height: 37px;
+            .excerpt {
+                height: 37px;
+            }
+    
+            @media(min-width: 60rem) {
+                max-width: 30%;
+            }
+    
+            
         }
-
-        @media(min-width: 60rem) {
-            max-width: 30%;
+    
+        @media(min-width: 128rem) {
+            max-width: 100%;
+            position: relative;
+            top: 10rem;
+            .project {
+                max-width: 18%;
+            }
         }
-
         
     }
-
-    @media(min-width: 128rem) {
-        max-width: 100%;
-        position: relative;
-        top: 10rem;
-        .project {
-            max-width: 15%;
-        }
-    }
-    
 }
+
+

@@ -3,7 +3,6 @@
 #landing {
     display: flex;
     gap: 1rem;
-    padding: 0 $padding-sm $padding-lg;
 
     .landing-info {
         align-self: center;
@@ -92,9 +91,5 @@
         .self-desc {
             font-size: $text-lg;
         }
-    }
-
-    @media (min-width: 100rem) {
-        padding: 0 $padding-lg;
     }
 }
