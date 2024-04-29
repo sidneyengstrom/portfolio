@@ -10,12 +10,13 @@
     
         @media (min-width: 40rem) {
             flex-direction: row;
+            flex-wrap: wrap;
             .project {
                 max-width: 46%;
             }
         }
     
-        @media (min-width: 60rem) {
+        @media (min-width: 61rem) {
             flex-wrap: nowrap;
         }
     
@@ -62,21 +63,5 @@
             color: $foreground--accent;
             animation: btnHover 0.65s ease-in-out;
         }
-    }
-
-    @media(min-width: 125rem) {
-        .project-wrapper {
-            min-height: 700px;
-
-            .project {
-                margin-top: -30rem;
-            }
-        }
-
-        .see-more-btn {
-            bottom: 10rem;
-            left: 3.75rem;
-        }
-        
     }
 }
