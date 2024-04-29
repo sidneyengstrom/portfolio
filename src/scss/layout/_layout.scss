@@ -1,4 +1,16 @@
 #root, header {
+    section {
+        padding: 0 $padding-sm;
+
+        @media(min-width: 60rem) {
+            padding: 0 $padding-m;
+        }
+
+        @media(min-width: 100rem) {
+            padding: 0 $padding-lg;
+        }
+    }
+
     @media(min-width: 125rem) {
         display: grid;
         grid-template-columns: 0.5fr 5fr 0.5fr;
