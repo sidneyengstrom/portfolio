@@ -1,5 +1,5 @@
 #root, header {
-    section {
+    section:not(#carousel):not(#project-info) {
         padding: 0 $padding-sm;
         margin-bottom: 3rem;
 
