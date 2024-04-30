@@ -1,24 +1,31 @@
-#app-wrap.dark-mode {
-    --background--main: $background--main;
-    --foreground--main: $foreground--main;
-    --foreground--accent: $foreground--accent;
-    --foreground--med: $foreground--med;
+@import '../abstracts/variables';
+body {
+    --background--main: #{$background--main};
+    --foreground--main: #{$foreground--main};
+    --foreground--accent: #{$foreground--accent};
+    --foreground--med: #{$foreground--med};
+    
+    --text-light: #{$text-light};
+    
+    --btn-link--hover: #{$btn-link--hover};
+    --btn-primary: 1.5px solid var(--foreground--main);
+    --btn-secondary: 1.5px solid var(--foreground--accent);
+    --box-shadow: #{$box-shadow};
+    --box-shadow--mild: #{$box-shadow--mild};
+    --project-card: #{$project-card};
+}    
 
-    --text-light: $text-light;
+body.light-mode {
+    --background--main: #{$background-light--main};
+    --foreground--main: #{$foreground-light--main};
+    --foreground--accent: #{$foreground-light--accent};
+    --foreground--med: #{$foreground-light--med};
+    --text-light: #{$text-light--light};
 
-    --btn-link--hover: $btn-link--hover;
-    --btn-primary: 1.5px solid $foreground--main;
-    --btn-secondary: 1.5px solid $foreground--accent;
-}
-
-#app-wrap.light-mode {
-    --background--main: $background-light--main;
-    --foreground--main: $foreground-light--main;
-    --foreground-accent: $foreground-light--accent;
-    --foreground--med: $foreground-light--med;
-    --text-light: $text-light--light;
-
-    --btn-link--hover: $btn-link-light--hover;
-    --btn-primary: $btn-light-primary;
-    --btn-secondary: $btn-light-secondary;
+    --btn-link--hover: #{$btn-link-light--hover};
+    --btn-primary: 1.5px solid var(--foreground--main);
+    --btn-secondary: 1.5px solid var(--foreground--accent);
+    --box-shadow: #{$box-light-shadow};
+    --box-shadow--mild: #{$box-light-shadow--mild};
+    --project-card: #{$project-light-card};
 }

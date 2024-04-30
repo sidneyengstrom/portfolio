@@ -5,14 +5,23 @@ $foreground--accent: #B398EB;
 $text-dark: #1B1B1B;
 $text-light: #9B9B9B;
 $foreground--med: #9B9B9B44;
+$box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+$box-shadow--mild: 0 0 10px 2px #00000066;
+$menu-bg: linear-gradient(to top, #000000 30%, #00000000);
+$project-card: linear-gradient(to top, #5b5b5bb3, #4a4a4ab3);
 
 $background-light--main: linear-gradient(30deg, #C9B9EB, #FFF);
 $foreground-light--main: #472382;
 $foreground-light--accent: #75609F;
-$text-light: #877d9a;
+$foreground-light--med: #8966be44;
+$text-light--light: #a08ec2;
 $btn-link-light--hover: #75609F;
 $btn-light-primary: 1.5px solid $foreground-light--main;
 $btn-light-secondary: 1.5px solid $foreground-light--accent;
+$box-light-shadow: 0 0 10px 2px #47238266;
+$box-light-shadow--mild: 0 0 10px 2px #47238266;
+$menu-light-bg: linear-gradient(to top, #472382 30%, #47238200);
+$project-light-card: transparent;
 
 
 //typography
