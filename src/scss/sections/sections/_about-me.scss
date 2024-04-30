@@ -21,7 +21,7 @@
             img {
                 max-width: 60%;
                 border-radius: 100%;
-                box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+                box-shadow: var(--box-shadow--mild);
                 opacity: 0.85;
             }
             
@@ -30,7 +30,7 @@
             }
 
             .text-light {
-                color: $text-light;
+                color: var(--text-light);
             }
 
             @media(min-width: 28rem) {

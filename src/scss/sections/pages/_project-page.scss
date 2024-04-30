@@ -65,12 +65,12 @@
 
         .project-wrapper {
             padding: 0.75rem;
-            background: linear-gradient(to top, #5b5b5bb3, #4a4a4ab3);
+            background: var(--project-card);
             border-radius: 1.15rem;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--box-shadow);
             transition: height 0.65s ease;
             max-width: 590px;
             

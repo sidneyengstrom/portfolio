@@ -33,7 +33,7 @@
         .social-bar {
             height: 60vh;
             width: 3px;
-            background-color: #ffffff;
+            background-color: var(--foreground--main);
 
             @media (min-width: 40rem) {
                 height: 55vh;

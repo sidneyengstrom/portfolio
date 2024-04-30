@@ -16,13 +16,13 @@
             gap: 0.15rem;
     
             p, a {
-                color: $text-light;
+                color: var(--text-light);
                 cursor: pointer;
                 margin: 0;
             }
     
             svg {
-                stroke: $text-light;
+                stroke: var(--text-light);
             }
         }
     }

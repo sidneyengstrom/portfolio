@@ -16,6 +16,6 @@ $bar-height: 0.175rem;
     display: block;
     height: $bar-height;
     width: $bar-width;
-    background-color: $foreground--main;
+    background-color: var(--foreground--main);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
