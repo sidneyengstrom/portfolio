@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from './components/Home';
 import Navigation from './components/Navigation';
 import ProjectDetails from './components/ProjectDetails';
 import AllProjects from './components/AllProjects';
 import Footer from './components/Footer';
-// import AllProjects from './components/AllProjects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
+  useEffect(() => {
+    const rootElement = document.querySelector('body');
+    if (rootElement) {
+      darkMode ? rootElement.classList.add('light-mode') : rootElement.classList.remove('light-mode');
+    }
+  }, [darkMode]);
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
