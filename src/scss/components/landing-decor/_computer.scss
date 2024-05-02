@@ -77,8 +77,8 @@
             flex-direction: column;
             width: 240px;
             height: 150px;
-            border: 5px solid var(--foreground--med);
-            border-bottom: 20px solid var(--foreground--med);
+            border: 5px solid var(--decor--accent);
+            border-bottom: 20px solid var(--decor--accent);
             gap: 1rem;
             background: var(--background--main);
             border-radius: 10px;
@@ -209,8 +209,9 @@
         height: 0; 
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
-        box-shadow: 0 4px var(--foreground--med);
-        border-bottom: 40px solid #595959;
+        box-shadow: 0 4px var(--decor--accent);
+        border-bottom: 40px solid var(--decor--accent);
+        opacity: 0.8;
         position: relative;
         bottom: 1rem;
         z-index: -1;

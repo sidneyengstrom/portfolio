@@ -7,4 +7,17 @@
     gap: 0.5rem;
     position: relative;
     box-shadow: var(--box-shadow);
+    color: var(--project-card--text);
+
+    &.right-swipe {
+        background: var(--project-card--secondary);
+        
+    }
+
+    a {
+        color: var(--project-card--text); 
+        svg {
+            stroke: var(--project-card--text);
+        }
+    }
 }
