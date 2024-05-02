@@ -1,6 +1,15 @@
 .art-wrapper {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-row: 2/3;
+    
     width: 100%;
+
+    @media(min-width: 26.5rem) {
+        grid-column: 1/3;
+    }
 
     .desktop-wrap {
         position: relative;
@@ -17,10 +26,9 @@
             border: 5px solid var(--foreground--med);
             border-bottom: 20px solid var(--foreground--med);
             gap: 1rem;
-            background-color: var(--background--main);
+            background: var(--background--main);
             border-radius: 10px;
             box-shadow: var(--box-shadow);
-            z-index: 5;
             overflow: hidden;
 
             > * {
@@ -65,7 +73,7 @@
                 .button {
                     display: flex;
                     padding: 0.5rem;
-                    border: 1.5px solid white;
+                    border: 1.5px solid var(--foreground--main);
                     border-radius: 0.35rem;
                     justify-content: center;
         
@@ -77,7 +85,7 @@
                     &.accent {
                         width: 40px;
                         height: 2px;
-                        border: 1.5px solid #B398EB;
+                        border: 1.5px solid var(--foreground--accent);
                         animation: button-wobble 2s infinite;
                         animation-delay: 3.5s;
                     }
@@ -145,12 +153,12 @@
             height: 55px;
             width: 2px;
             border-radius: 10px;
-            background-color: white;
+            background-color: var(--foreground--main);
         }
 
         .icon {
             background-color: transparent;
-            border: 2px solid white;
+            border: 2px solid var(--foreground--main);
             width: 8px;
             height: 8px;
             border-radius: 100%;
@@ -163,7 +171,6 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        z-index: 10;
         bottom: 5rem;
         left: 4rem;
         animation: cursor 5s infinite;
@@ -175,13 +182,13 @@
         height: 0; 
         border-left:10px solid transparent;
         border-right:10px solid transparent;
-        border-bottom: 20px solid #fff;
+        border-bottom: 20px solid var(--foreground--main);
     }
     
     .wrist {
         width: 5px;
         height: 5px;
-        background-color: #fff;
+        background-color: var(--foreground--main);
     }
 }
 
