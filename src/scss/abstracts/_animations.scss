@@ -47,6 +47,8 @@
     100% {
         position: static;
     }
+}
+
 @keyframes title-load {
     0% {
         width: 0;
@@ -115,7 +117,7 @@
 }
 @keyframes cursor {
     0% {
-        bottom: 5rem;
+        bottom: 10rem;
         left: 4rem;
     }
 
@@ -124,12 +126,12 @@
     }
 
     50% {
-        bottom: 6rem;
-        left: 9rem;
+        bottom: 14rem;
+        left: 12rem;
     }
 
     75% {
-        bottom: 8rem;
-        left: 7.5rem;
+        bottom: 11rem;
+        left: 9.5rem;
     }
 }
