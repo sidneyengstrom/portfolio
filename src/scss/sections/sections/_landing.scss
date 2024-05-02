@@ -1,13 +1,14 @@
 @use '../../abstracts/animations' as *;
 
 #landing {
+
     display: grid;
     grid-template-columns: 0.5fr 4fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
     gap: 1rem;
 
     .landing-info {
-        margin-top: -5rem;
+        margin-top: 5rem;
         align-self: center;
         display: flex;
         flex-direction: column;
