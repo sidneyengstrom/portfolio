@@ -21,7 +21,7 @@
             width: 85px;
             height: 95px;
             z-index: 4;
-            background-color: #665882;
+            background-color: var(--decor--accent);
             z-index: 3;
             transform: rotate(-5deg);
             left: 0.5rem;
@@ -29,6 +29,7 @@
         }
     
         p {
+            color: #fff;
             margin: 0;
             font-size: 0.75rem;
             &:first-of-type {
