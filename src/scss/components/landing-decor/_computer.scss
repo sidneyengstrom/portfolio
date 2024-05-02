@@ -1,0 +1,247 @@
+.art-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    @media(min-width: 25rem) {
+        left: $padding-lg;
+        transform: scale(1.1);
+
+        .post-it-wrap {
+            bottom: 4rem;
+        }
+
+    }
+
+    @media(min-width: 32rem) {
+        top: 6rem;
+        left: 6rem;
+        transform: scale(1.2);
+        justify-self: center;
+
+        .window {
+            bottom: 2rem;
+            left: 3rem;
+        }
+    }
+
+    @media(min-width: 40rem) {
+        .post-it-wrap {
+            left: 16rem;
+        }
+
+        .window {
+            left: 7rem;
+        }
+    }
+
+    @media(min-width: 69rem) {
+        justify-content: center;
+
+        .post-it-wrap {
+            bottom: 5rem;
+        }
+        .window {
+            bottom: 6rem;
+        }
+    }
+
+    @media(min-width: 87.5rem) {
+        transform: scale(1.5);
+        left: 12rem;
+    }
+
+    @media(min-width: 105rem) {
+        left: 20rem;
+    }
+
+    .desktop-wrap {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        position: absolute;
+        left: 0;
+        bottom: 14rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media(min-width: 40rem) {
+            bottom: 21rem;
+        }
+ 
+        .screen {
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+            height: 150px;
+            border: 5px solid var(--foreground--med);
+            border-bottom: 20px solid var(--foreground--med);
+            gap: 1rem;
+            background: var(--background--main);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            padding: 1rem 0.5rem;
+
+            .header-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                span {
+                    height: 8px;
+                    animation: title-load 1.2s forwards;
+                    margin: 0.25rem 0;
+                }
+            }
+
+            span {
+                opacity: 0.8;
+                background-color: var(--foreground--main);
+                border-radius: 10px;
+    
+                &.accent {
+                    background-color: var(--foreground--accent);
+                    width: 0;
+                    animation: acc-title-load 1.2s forwards;
+                    animation-delay: 0.5s;
+                }
+            }
+
+            .button-wrap {
+                position: relative;
+                top: 6rem;
+                display: flex;
+                gap: 0.5rem;
+                animation: button-load 1.5s forwards;
+                animation-delay: 2.2s;
+        
+                .button {
+                    display: flex;
+                    padding: 0.5rem;
+                    border: 1.5px solid var(--foreground--main);
+                    border-radius: 0.35rem;
+                    justify-content: center;
+        
+                    span {
+                        width: 40px;
+                        height: 2px;
+                    }
+        
+                    &.accent {
+                        width: 40px;
+                        height: 2px;
+                        border: 1.5px solid var(--foreground--accent);
+                        animation: button-wobble 2s infinite;
+                        animation-delay: 3.5s;
+                    }
+                }
+            }
+        }
+
+        .paragraph-wrap {
+            display: grid;
+            visibility: hidden;
+            grid-template-columns: 1fr 1fr 2fr 0.75fr;
+            grid-template-rows: auto;
+            max-width: 70%;
+            gap: 0.5rem;
+            animation: paragraph-load 1.5s forwards;
+            animation-delay: 1s;
+            width: 0;
+
+            .paragraph {
+                width: 100%;
+                height: 4px;
+
+                &.span-2 {
+                    grid-column: span 2;
+                }
+
+                &.w-75 {
+                    max-width: 75%;
+                }
+
+                &.w-half {
+                    max-width: 50%;
+                }
+            } 
+        }
+
+        .social-bar {
+            position: absolute;
+            gap: 0.2rem;
+            right: 0;
+            top: 0.5rem;
+            display: grid;
+            grid-template-rows: 55px repeat(4, 0.75rem);
+            z-index: 10;
+            margin-left: auto;
+            padding-right: 1rem;
+    
+                
+            .bar {
+                position: relative;
+                left: 2.75px;
+                height: 55px;
+                width: 2px;
+                border-radius: 10px;
+                background-color: var(--foreground--main);
+            }
+    
+            .icon {
+                background-color: transparent;
+                border: 2px solid var(--foreground--main);
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+            }
+        }
+    }
+    
+    
+
+    .desktop-stand {
+        width: 0; 
+        height: 0; 
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        box-shadow: 0 4px var(--foreground--med);
+        border-bottom: 40px solid #595959;
+        position: relative;
+        bottom: 1rem;
+        z-index: -1;
+    }
+    
+    
+
+    .cursor {
+        transform: rotate(-30deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+        animation: cursor 5s infinite;
+        opacity: 0.8;
+    }
+    
+    .pointer {
+        width: 0; 
+        height: 0; 
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+        border-bottom: 16px solid var(--foreground--main);
+    }
+    
+    .wrist {
+        width: 3px;
+        height: 5px;
+        background-color: var(--foreground--main);
+    }
+}
+

@@ -1,0 +1,92 @@
+.window {
+    width: 15rem;
+    height: 13rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: relative;
+    right: 0;
+    right: 0.5rem;
+    border: 0.25rem solid var(--foreground--main);
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.8;
+
+    > * {
+        background-color: var(--foreground--main);
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .vertical-bar {
+        height: 12.5rem;
+        width: 0.25rem;
+        margin: 0 auto;
+    }
+    
+    .horizontal-bar {
+        height: 0.25rem;
+        width: 14.5rem;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .sun, .moon {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        left: 1rem;
+        top: 2rem;
+        z-index: 3;
+        background-color: #e1e15e;
+    }
+    
+    .moon {
+        background: linear-gradient(#91879f, #4c4457);
+        display: flex;
+        overflow: hidden;
+
+        .crater {
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 100%;
+            position: relative;
+            opacity: 0.5;
+
+            &.light {
+                background-color: #fff;
+            }
+
+            &.dark {
+                background-color: #1b1b1b;
+            }
+
+            &.small {
+                width: 1rem;
+                height: 1rem;
+            }
+
+            &.pr {
+                top: 1rem;
+                left: 0.25rem;
+            }
+
+            &.sc {
+                top: 2rem;
+                left: 2rem;
+            }
+
+            &.tr {
+                top: 3.5rem;
+            }
+
+            &.qr {
+                right: 0.5rem
+            }
+        }
+    }
+}
