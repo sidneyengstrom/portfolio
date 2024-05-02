@@ -7,13 +7,16 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'dark';
+  });
+
   useEffect(() => {
-    const rootElement = document.querySelector('body');
-    if (rootElement) {
-      darkMode ? rootElement.classList.add('light-mode') : rootElement.classList.remove('light-mode');
-    }
+    document.body.classList.toggle('light-mode', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
+
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
