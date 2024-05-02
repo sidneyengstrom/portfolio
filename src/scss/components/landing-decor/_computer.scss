@@ -1,0 +1,187 @@
+.art-wrapper {
+    grid-row: 1/2;
+    width: 100%;
+
+    .desktop-wrap {
+        position: relative;
+        top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .screen {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 150px;
+            border: 5px solid var(--foreground--med);
+            border-bottom: 20px solid var(--foreground--med);
+            gap: 1rem;
+            background-color: var(--background--main);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            z-index: 5;
+            overflow: hidden;
+
+            > * {
+                position: relative;
+                top: 1rem;
+                left: 0.5rem;
+            }
+
+            .header-wrap {
+
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                span {
+                    height: 4px;
+                    animation: title-load 1.2s forwards;
+                }
+            }
+
+            span {
+                opacity: 0.8;
+                background-color: var(--foreground--main);
+                border-radius: 10px;
+    
+                &.accent {
+                    background-color: var(--foreground--accent);
+                    width: 0;
+                    animation: acc-title-load 1.2s forwards;
+                    animation-delay: 0.5s;
+                }
+            }
+
+            .button-wrap {
+                position: relative;
+                top: 6rem;
+                display: flex;
+                gap: 0.5rem;
+                animation: button-load 1.5s forwards;
+                animation-delay: 2.2s;
+        
+                .button {
+                    display: flex;
+                    padding: 0.5rem;
+                    border: 1.5px solid white;
+                    border-radius: 0.35rem;
+                    justify-content: center;
+        
+                    span {
+                        width: 40px;
+                        height: 2px;
+                    }
+        
+                    &.accent {
+                        width: 40px;
+                        height: 2px;
+                        border: 1.5px solid #B398EB;
+                        animation: button-wobble 2s infinite;
+                        animation-delay: 3.5s;
+                    }
+                }
+            }
+        }
+
+        .paragraph-wrap {
+            display: grid;
+            visibility: hidden;
+            grid-template-columns: 1fr 1fr 2fr 0.75fr;
+            grid-template-rows: auto;
+            max-width: 70%;
+            gap: 0.5rem;
+            animation: paragraph-load 1.5s forwards;
+            animation-delay: 1s;
+            width: 0;
+
+            .paragraph {
+                width: 100%;
+                height: 4px;
+
+                &.span-2 {
+                    grid-column: span 2;
+                }
+
+                &.w-75 {
+                    max-width: 75%;
+                }
+
+                &.w-half {
+                    max-width: 50%;
+                }
+            } 
+        }
+    }
+    
+    
+
+    .desktop-stand {
+        width: 0; 
+        height: 0; 
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        box-shadow: 0 4px var(--foreground--med);
+        border-bottom: 40px solid var(--foreground--med);
+        position: relative;
+        bottom: 1rem;
+    }
+    
+    .social-bar {
+        top: 0.4rem;
+        right: 1rem;
+        position: absolute;
+        gap: 0.1rem;
+        display: grid;
+        grid-template-rows: 55px repeat(4, 0.75rem);
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+            
+        .bar {
+            position: relative;
+            left: 2.75px;
+            height: 55px;
+            width: 2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .icon {
+            background-color: transparent;
+            border: 2px solid white;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+        }
+    }
+
+    .cursor {
+        transform: rotate(-30deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        bottom: 5rem;
+        left: 4rem;
+        animation: cursor 5s infinite;
+        opacity: 0.8;
+    }
+    
+    .pointer {
+        width: 0; 
+        height: 0; 
+        border-left:10px solid transparent;
+        border-right:10px solid transparent;
+        border-bottom: 20px solid #fff;
+    }
+    
+    .wrist {
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+    }
+}
+

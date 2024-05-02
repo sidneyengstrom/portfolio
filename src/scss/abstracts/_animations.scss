@@ -47,4 +47,89 @@
     100% {
         position: static;
     }
+@keyframes title-load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes acc-title-load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes paragraph-load {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        visibility: visible;
+    }
+
+    100% {
+        width: 70%;
+        visibility: visible;
+    }
+}
+
+@keyframes button-load {
+    0% {
+        top: 6rem;
+    }
+
+    40% {
+        top: 1rem;
+    }
+
+    100% {
+        top: 2rem;
+    }
+}
+
+@keyframes button-wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    75% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0.75deg);
+    }
+}
+@keyframes cursor {
+    0% {
+        bottom: 5rem;
+        left: 4rem;
+    }
+
+    25% {
+        left: 8rem;
+    }
+
+    50% {
+        bottom: 6rem;
+        left: 9rem;
+    }
+
+    75% {
+        bottom: 8rem;
+        left: 7.5rem;
+    }
 }
