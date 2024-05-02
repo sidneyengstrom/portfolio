@@ -4,9 +4,9 @@ import DateTime from './DateTime';
 
 function LandingDecoration() {
     return (
-        <div class="art-wrapper" role="presentation">
-            <Computer />
+        <div className="art-wrapper" role="presentation">
             <Window />
+            <Computer />
             <DateTime />
         </div>
     )
