@@ -3,9 +3,19 @@
 #landing {
     overflow: hidden;
     display: grid;
-    grid-template-columns: 0.5fr 4fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 80vh;
+    
+    @media(min-width: 40rem) {
+        gap: 2.5rem;
+    }
+    
+    @media(min-width: 69rem) {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .landing-info {
         margin-top: 5rem;

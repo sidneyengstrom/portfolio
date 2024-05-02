@@ -90,11 +90,11 @@
     }
 
     40% {
-        top: 1rem;
+        top: -0.5rem;
     }
 
     100% {
-        top: 2rem;
+        top: -0.25rem;
     }
 }
 
@@ -117,7 +117,7 @@
 }
 @keyframes cursor {
     0% {
-        bottom: 10rem;
+        bottom: 4rem;
         left: 4rem;
     }
 
@@ -126,12 +126,12 @@
     }
 
     50% {
-        bottom: 14rem;
+        bottom: 8rem;
         left: 12rem;
     }
 
     75% {
-        bottom: 11rem;
+        bottom: 5rem;
         left: 9.5rem;
     }
 }

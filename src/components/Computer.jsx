@@ -24,14 +24,15 @@ function Computer() {
                         <span className="text accent"></span>
                     </div>
                 </div>
+                <div className="social-bar">
+                    <span className="bar"></span>
+                    <span className="icon"></span>
+                    <span className="icon"></span>
+                    <span className="icon"></span>
+                    <span className="icon"></span>
+                </div>
             </div>
-            <div className="social-bar">
-                <span className="bar"></span>
-                <span className="icon"></span>
-                <span className="icon"></span>
-                <span className="icon"></span>
-                <span className="icon"></span>
-            </div>
+            
             <div className="desktop-stand"></div>
             <div className="cursor">
                 <div className="pointer"></div>

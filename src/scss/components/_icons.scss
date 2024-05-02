@@ -9,6 +9,7 @@ svg {
     width: 2.5rem;
     height: 2.5rem;
     transition: transform 0.65s ease, border 1s ease;
+    background: var(--background--main);
 
     a {
         @include centerFlex;

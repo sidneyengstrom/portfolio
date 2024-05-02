@@ -1,13 +1,14 @@
 .post-it-wrap {
     position: relative;
-    bottom: 20rem;
-    left: 10rem;
     z-index: 20;
+    left: 11rem;
+    bottom: 2rem;
+    
     .post-it {
         position: absolute;
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.4rem;
         text-align: center;
         background-color: var(--foreground--accent);
         max-width: 40%;

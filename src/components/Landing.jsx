@@ -4,11 +4,14 @@ import LandingDecoration from './LandingDecoration';
 
 function Landing({ darkMode, toggleDarkMode }) {
     return (
+        <>
         <section id="landing">
             <LandingInfo />
             <LandingDecoration />
-            <Socials darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
         </section>
+        <Socials darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+        </>
+        
     )
 }
 export default Landing
