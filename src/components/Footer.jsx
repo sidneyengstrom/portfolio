@@ -1,8 +1,14 @@
 
-function Footer () {
+function Footer ({ darkMode, toggleDarkMode }) {
     return (
         <footer>
-            <img src="/src/assets/images/footer.svg"></img>
+            {darkMode ? (
+                <img src="/src/assets/images/footer-light.svg"></img>
+            ) : (
+                <img src="/src/assets/images/footer.svg"></img>
+                
+            )}
+            
             <div className="footer-content">
                 <div className="content-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">

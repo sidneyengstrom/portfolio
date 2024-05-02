@@ -29,7 +29,7 @@ function App() {
           <Route path="/projects" element={<AllProjects />}></Route>
         </Routes>
         <Navigation />
-        <Footer />
+        <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
     </Router>
   )
