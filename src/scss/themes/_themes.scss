@@ -13,7 +13,13 @@ body {
     --box-shadow: #{$box-shadow};
     --box-shadow--mild: #{$box-shadow--mild};
     --project-card: #{$project-card};
+    --project-card--secondary: #{$project-card};
+    --project-card--text: #{$foreground--main};
+
+    --decor--accent: #{$foreground--med};
+    --svg-stroke: #{$foreground--main};
 }    
+
 
 body.light-mode {
     --background--main: #{$background-light--main};
@@ -23,9 +29,14 @@ body.light-mode {
     --text-light: #{$text-light--light};
 
     --btn-link--hover: #{$btn-link-light--hover};
-    --btn-primary: 1.5px solid var(--foreground--main);
-    --btn-secondary: 1.5px solid var(--foreground--accent);
+    --btn-primary: 2px solid var(--foreground--main);
+    --btn-secondary: 2px solid var(--foreground--accent);
     --box-shadow: #{$box-light-shadow};
     --box-shadow--mild: #{$box-light-shadow--mild};
     --project-card: #{$project-light-card};
+    --project-card--secondary: #{$project-light-card--secondary};
+    --project-card--text: #{$background-light--main};
+
+    --svg-stroke: #{$background-light--main};
+    --decor--accent: #{$foreground-light--main};
 }
