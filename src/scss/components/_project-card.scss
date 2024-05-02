@@ -1,6 +1,6 @@
 .card-bg.project {
     &:hover {
-        border: 2px solid $foreground--accent;
+        border: 2px solid var(--foreground--accent);
         animation: cardHover 3.5s ease-in-out;
         animation-iteration-count: 1000000;
     }
@@ -26,11 +26,11 @@
     img {
         border-radius: 0.45rem;
         margin-bottom: 0.5rem;
-        box-shadow: 0 0 10px 2px #00000066;
+        box-shadow: var(--box-shadow--mild);
     }
 
     > p {
-        color: $text-light;
+        color: var(--text-light);
     }
 
     .learn-more {
@@ -48,7 +48,7 @@
         p {
             padding: 0.25rem 0.75rem;
             border-radius: 10px;
-            border: 1.5px solid $text-light;
+            border: 1.5px solid var(--text-light);
         }
     }
 }

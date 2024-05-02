@@ -1,7 +1,11 @@
+svg {
+    stroke: var(--foreground--main);
+}
+
 .social-icon {
     @include centerFlex;
     border-radius: 100%;
-    border: 2px solid white;
+    border: 2px solid var(--foreground--main);
     width: 2.5rem;
     height: 2.5rem;
     transition: transform 0.65s ease, border 1s ease;
@@ -10,17 +14,18 @@
         @include centerFlex;
     }
     svg {
+        stroke: var(--foreground--main);
         transition: stroke 1s ease;
     }
 
     &:hover {
         transform: scale(1.05);
-        border: 2px solid $foreground--accent;
+        border: 2px solid var(--foreground--accent);
         animation: iconHover 0.65s ease-in-out;
         cursor: pointer;
 
         svg {
-            stroke: $foreground--accent;
+            stroke: var(--foreground--accent);
         }
     }
 

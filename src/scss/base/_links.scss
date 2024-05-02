@@ -1,7 +1,7 @@
 @use '../abstracts/animations' as *;
 
 a {
-    color: $foreground--main;
+    color: var(--foreground--main);
     transition: color 0.3s ease;
 
     & + .link-underline {
@@ -9,7 +9,7 @@ a {
         height: 2px;
         border-radius: 30px;
         visibility: hidden;
-        background-color: $foreground--accent;
+        background-color: var(--foreground--accent);
     }
 
     svg {
@@ -17,14 +17,14 @@ a {
     }
 
     &:hover {
-        color: $foreground--accent;
+        color: var(--foreground--accent);
         & + .link-underline {
             visibility: visible;
             animation: linkUnderline 0.75s forwards;
         }
         
         svg {
-            stroke: $foreground--accent;
+            stroke: var(--foreground--accent);
         }
     }
 

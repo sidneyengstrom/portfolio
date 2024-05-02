@@ -23,7 +23,7 @@ header {
             position: relative;
             &:hover {
                 .bar, .bar::before, .bar::after {
-                    background-color: $foreground--accent;
+                    background-color: var(--foreground--accent);
                 }
                 cursor: pointer;
                 animation: btnHover 0.65s ease;
@@ -66,7 +66,7 @@ header {
                 bottom: 2rem;
                 &:hover {
                     .bar::before, .bar::after {
-                        background-color: $foreground--accent;
+                        background-color: var(--foreground--accent);
                     }
                     cursor: pointer;
                     animation: btnHover 0.65s ease;
@@ -75,12 +75,12 @@ header {
                     background-color: transparent;
 
                     &::before {
-                        background-color: $foreground--main;
+                        background-color: var(--foreground--main);
                         transform: rotate(45deg) translateY(9px) translateX(5px);
                     }
             
                     &::after {
-                        background-color: $foreground--main;
+                        background-color: var(--foreground--main);
                         transform: rotate(-45deg) translateY(-9px) translateX(5px);
                     }
                 }
