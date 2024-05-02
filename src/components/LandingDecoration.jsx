@@ -4,7 +4,7 @@ import DateTime from './DateTime';
 
 function LandingDecoration() {
     return (
-        <div class="art-wrapper" role="presentation" aria-roledescription="presentation">
+        <div class="art-wrapper" role="presentation">
             <Computer />
             <Window />
             <DateTime />
