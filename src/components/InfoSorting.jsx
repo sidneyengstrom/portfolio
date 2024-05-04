@@ -56,7 +56,10 @@ function InfoSorting() {
                     <div className='learnings'>
                         <div className='desc'>
                             <h2>What I Learned</h2>
-                            <p>{project.learnings}</p>
+                            {project.learnings.map((learningParagraph, index) => (
+                                <p key={index}>{learningParagraph}</p>
+                            ))}
+                            
                         </div>
                     </div>
                 )}
