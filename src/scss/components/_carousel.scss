@@ -1,33 +1,16 @@
 #carousel {
     margin: 2.5rem 1rem 1rem;
 
-
-    @media(min-width: 40.625rem) {
-        align-self: center;
-        overflow: hidden;
-    }
-
-    @media(min-width: 72.5rem) {
-        margin-top: 3rem;
-        justify-self: end;
-    }
     .react-multi-carousel-list {
         overflow: visible;
-        @media (min-width: 40.625rem) {
-            max-width: 590px;
-            overflow-x: hidden;
-        }
-        
 
         .react-multi-carousel-item {
             right: 10px;            
             z-index: 100;
             transition: transform 0.4s ease, opacity 0.4s ease, right 0.4s ease;
-            
 
-            @media (min-width: 40.625rem) {
+            @media(min-width: 62.5rem) {
                 right: 0;
-                max-width: 590px;
             }
 
             img {
@@ -42,22 +25,35 @@
             right: 100px;
             opacity: 0.25;
             transform: scale(0.8);
+            @media(min-width: 62.5rem) {
+                right: 0;
+            }
+        }
 
-            @media(min-width: 40.625rem) {
-                opacity: 0;
+        .react-multi-carousel-item:has(+ .react-multi-carousel-item--active) {
+            @media(min-width: 62.5rem) {
+                left: 8rem;
+            }
+        }
+
+        .react-multi-carousel-item--active + .react-multi-carousel-item {
+            @media(min-width: 62.5rem) {
+                right: 8rem;
             }
         }
     }
 
     .react-multiple-carousel__arrow--left {
         left: 7px;
+        @media(min-width: 62.5rem) {
+            left: 0;
+        }
     }
 
     .react-multiple-carousel__arrow--right {
         right: 27px;
-
-        @media(min-width: 40.625rem) {
-            right: 6.5px;
+        @media(min-width: 62.5rem) {
+            right: 0;
         }
     }
 }

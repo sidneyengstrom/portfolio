@@ -81,7 +81,7 @@ export const projects = [
 
     {
         title: 'Sidney Engstrom Portfolio',
-        thumbsrc: 'coming-soon.png',
+        thumbsrc: 'coming-soon-thumb.png',
         thumbalt: 'Coming soon placeholder image.',
         excerpt: 'Personal web development portfolio.',
         description: 'My personal portfolio was designed to display my strongest work, expertise and contact information to those who may be interested in getting to know me or working with me on design and development projects. Built with React and featuring many hand-coded animations, CSS (or, more specifically, SCSS) art pieces and a light and dark mode toggle, I hoped to show off not only my programming competencies but my creativity and eye for design.',
@@ -130,7 +130,7 @@ export const projects = [
 
     {
         title: 'Porter Studios',
-        thumbsrc: 'coming-soon.png',
+        thumbsrc: 'coming-soon-thumb.png',
         thumbalt: 'Coming soon placeholder image.',
         excerpt: 'Wedding photography business portfolio.',
 
