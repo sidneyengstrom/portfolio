@@ -2,6 +2,7 @@
     overflow: hidden;
     min-height: 100vh;
     margin-top: 2rem;
+    color: var(--project-card--text);
 
     @media(min-width: 62.5rem) {
         margin-top: 5rem;

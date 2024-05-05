@@ -16,8 +16,18 @@
 
     a {
         color: var(--project-card--text); 
+
         svg {
             stroke: var(--project-card--text);
         }
+
+        &:hover {
+            color: var(--foreground--accent);
+
+            svg {
+                stroke: var(--foreground--accent);
+            }
+        }
+        
     }
 }

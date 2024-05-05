@@ -4,6 +4,7 @@ body {
     --foreground--main: #{$foreground--main};
     --foreground--accent: #{$foreground--accent};
     --foreground--med: #{$foreground--med};
+    --reduced-foreground--med: #{$foreground--med};
     
     --text-light: #{$text-light};
     
@@ -15,6 +16,7 @@ body {
     --project-card: #{$project-card};
     --project-card--secondary: #{$project-card};
     --project-card--text: #{$foreground--main};
+    --project-accordion--text: #{$foreground--accent};
 
     --decor--accent: #{$foreground--med};
     --svg-stroke: #{$foreground--main};
@@ -26,6 +28,7 @@ body.light-mode {
     --foreground--main: #{$foreground-light--main};
     --foreground--accent: #{$foreground-light--accent};
     --foreground--med: #{$foreground-light--med};
+    --reduced-foreground--med: #{$reduced-foreground-light--med};
     --text-light: #{$text-light--light};
 
     --btn-link--hover: #{$btn-link-light--hover};
@@ -36,6 +39,7 @@ body.light-mode {
     --project-card: #{$project-light-card};
     --project-card--secondary: #{$project-light-card--secondary};
     --project-card--text: #{$background-light--main};
+    --project-accordion--text: #{$text-light--light};
 
     --svg-stroke: #{$background-light--main};
     --decor--accent: #{$foreground-light--main};
