@@ -9,27 +9,22 @@ export const projects = [
 
         process: {
             design: {
-                title:  'Design Process',
-                mainImage: 'coming-soon.png',
+                title:  'Designing',
                 text: ['Starting with an empty Photoshop file and a dream, I started work on my first high fidelity mockup for the movie database site. After spending a significant amount of time deliberating over a colour scheme, I ultimately landed on a reference to an artistic rendition of the cover of \'The Great Gatsby\', and after some tweaks to ensure readability and modernity, I was off.', 
                 'Below you\'ll see my first concepts for the landing section and about page of the site.'],
-                otherImages: ['coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['take-five-home-original.jpg', 'take-five-about-original.jpg'],
             },
 
             prototyping: {
-                title: 'Prototyping Process',
-                mainImage: 'coming-soon.png',
+                title: 'Prototyping',
                 text: ['The start of the prototyping process brought about the beginning of the team-built portion of the project, which meant combining the best parts of our designs to create the most effective user interface. Most of my work was focused on desktop size design and functionality in Adobe XD.', 'Below you\'ll see how we cohesively brought our designs together and brought them to life with interactive features.'],
-                otherImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4'],
+                featuredImages: ['take-five-prototype.jpg'],
+                videos: ['take-five-prototype.mp4'],
             },
 
             development: {
-                title: 'Development Process',
-                mainImage: 'coming-soon.png',
-                text: ['Jumping from creating fairly simple, static web pages to building a dynamic, API-integrated React app was daunting to say the least. Maintaining organization of so many moving pieces, not to mention keeping track of everybody\'s work at all times to prevent Git conflicts, was possibly the hardest learning curve. However, following DRY principles and sticking closely to our mockup and prototype designs kept us on track to completion.', 'Below you\'ll see some screenshots of our final product.' ],
-                otherImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4'],
+                title: 'Development',
+                text: ['Jumping from creating fairly simple, static web pages to building a dynamic, API-integrated React app was daunting to say the least. Maintaining organization of so many moving pieces, not to mention keeping track of everybody\'s work at all times to prevent Git conflicts, was possibly the hardest learning curve. However, following DRY principles and sticking closely to our mockup and prototype designs kept us on track to completion.'],
             },
         },
 
@@ -46,7 +41,7 @@ export const projects = [
 
         feature: true,
 
-        carouselImgs: ['moviedb-main.png', 'take-five-posters.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['take-five/take-five-main.jpg', 'take-five/take-five-posters.jpg', 'take-five/take-five-list.jpg', 'take-five/take-five-details.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 
@@ -60,22 +55,18 @@ export const projects = [
 
         process: {
             design: {
-                title:  'Design Process',
-                mainImage: 'coming-soon.png',
+                title:  'Designing',
                 text: ['Having travelled to Ottawa a handful of times prior to creating this website, I was hoping to be able to incorporate a bit of that experience into my designs. Something I found interesting about the city was its ability to completely shift energy between day and night. I decided to incorporate this into the design by giving the user the option to choose between looking at a day or night-themed gallery page.', 'Below you can see how I implemented this into the design.'],
-                otherImages: ['coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['discover-ottawa-prompt.jpg', 'discover-ottawa-day.jpg', 'discover-ottawa-night.jpg'],
             },
 
             development: {
-                title: 'Development Process',
-                mainImage: 'coming-soon.png',
-                text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development. While my personal style has since grown with my skill set, and despite launching this site only 5 months ago it already feels quite outdated, I remember feeling this great sense of creative freedom during the project - adding more and more fine details with every revision of the site. The development process overall really strengthened my keen eye for detail and was the kickstarter for the development of my personal style in terms of web design.' ],
-                otherImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4'],
+                title: 'Development',
+                text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development. While my personal style has since grown with my skill set, and despite launching this site only 5 months ago it already feels quite outdated, I remember feeling this great sense of creative freedom during the project - adding more and more fine details with every revision of the site.', 'The development process overall really strengthened my keen eye for detail and was the kickstarter for the development of my personal style in terms of web design.' ],
             },
         },
 
-        learnings: 'Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.',
+        learnings: ['Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.'],
 
         repo: false,
         repoLink: 'null',
@@ -84,7 +75,7 @@ export const projects = [
         alltech: ['HTML5', 'CSS3', 'JavaScript', 'Illustrator'],
         feature: true,
         slug: 'discover-ottawa',
-        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['discover-ottawa/discover-ottawa-main.jpg', 'discover-ottawa/discover-ottawa-cards.jpg', 'discover-ottawa/discover-ottawa-gallery.jpg', 'discover-ottawa/discover-ottawa-ac.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 
@@ -97,10 +88,9 @@ export const projects = [
 
         process: {
             design: {
-                title:  'Design Process',
-                mainImage: 'coming-soon.png',
+                title:  'Designing',
                 text: ['For the first iteration of my portfolio design, I decided to build the mockups in Adobe XD. As you\'ll see below, the first designs featured a lot more prominent colour than the current ones, which I ultimately decided to shift to more of an accent so the site would be a compliment to my featured projects rather than a distraction from them.', 'Below you\'ll see links to the style guide for my initial concept and the Figma file half-wireframe-half-mockup with some initial ideas for the final iteration. You can also have a look at the various versions of my landing page, starting with my very first build done at the start of my journey with the front-end development world.'],
-                otherImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
                 links: {
                     xd: 'https://xd.adobe.com/view/02ecd25e-b516-4b75-b87c-5dfd957dab03-57bf/?fullscreen',
                     figma: 'https://www.figma.com/file/9NTVNbmS7yu5iCHwWKbWJQ/portfolio-wireframe-mockup?type=design&node-id=0%3A1&mode=design&t=f3OtMu6HjCtcGO7d-1',
@@ -108,10 +98,9 @@ export const projects = [
             },
 
             prototyping: {
-                title: 'Prototyping Process',
-                mainImage: 'coming-soon.png',
+                title: 'Prototyping',
                 text: ['While I didn\'t end up building a functioning prototype for my final redesign of the site, I did create one for the middle-most iteration. The prototyping process forced me to take a closer look at the UX implications of my design, and forced some changes for a smoother experience. One change which did carry through to the end of the project was the decision to have a visually interesting and artistic feature on the landing section of the site. While the exact design changed from bubbles to a computer desk scene, the intention to show off my creative abilities stayed the same throughout.', 'Below you can have a look at some of the interactive parts of the prototype or check out the XD file.'],
-                otherImages: ['coming-soon.png'],
+                featuredImages: ['coming-soon.png'],
                 videos: ['coming-soon.mp4', 'coming-soon.mp4'],
                 links: {
                     xd: 'https://xd.adobe.com/view/875fa465-16e5-466c-a121-5880f46da6f3-d20c/?fullscreen',
@@ -119,8 +108,7 @@ export const projects = [
             },
 
             development: {
-                title: 'Development Process',
-                mainImage: 'coming-soon.png',
+                title: 'Development',
                 text: ['After combining some of the best features from the two fleshed out iterations of my portfolio, I began diving into the development world. I decided to integrate some of the first version\'s \"upcoming projects\" concepts into the \"process\" section you\'re reading through now, walking those interested through some of my desicions and ideas throughout the various steps of creating my sites. I loved being able to take some time to create the art shown in the landing section, and was happy to be able to maintain organization of my SASS files and React components despite complicated integrations like this.'],
             },
         },
@@ -132,7 +120,7 @@ export const projects = [
         liveSite: 'https://sidney-engstrom.com',
 
         featuredTech: ['React', 'SCSS'],
-        alltech: ['React', 'JavaScript', 'SCSS', 'Git / GitHub', 'Illustrator', 'Figma'],
+        alltech: ['React', 'JavaScript', 'SASS / SCSS', 'Git / GitHub', 'Illustrator', 'Figma'],
         feature: true,
         slug: 'personal-portfolio',
 
@@ -149,20 +137,18 @@ export const projects = [
         description: 'Details coming soon.',
         process: {
             design: {
-                title:  'Design Process',
-                mainImage: 'coming-soon.png',
+                title:  'Designing',
                 text: ['Details coming soon.'],
-                otherImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
             },
 
             development: {
-                title: 'Development Process',
-                mainImage: 'coming-soon.png',
+                title: 'Development',
                 text: ['Details coming soon.'],
             },
         },
 
-        learnings: 'More info coming soon.',
+        learnings: ['More info coming soon.'],
         repo: false,
         repoLink: 'https://github.com/htpwebdesign/porterstudio-theme',
         liveSite: 'https://porterstudio.bcitwebdeveloper.ca',
@@ -185,21 +171,19 @@ export const projects = [
 
         process: {
             design: {
-                title:  'Design Process',
-                mainImage: 'coming-soon.png',
+                title:  'Designing',
                 text: ['Coming up with the design concept of this site was as simple as thinking about the kind of game aesthetics I have always loved - old Nintendo, Atari, and pretty much anything pixel art. Initially, I had considered creating a full-fledged pixel art game from scratch, though too pressed for time during the creation of this particular project, that idea has stuck with me... stay tuned ;)', 'Below you\'ll see some of my very first concepts for the game design, and where it ended up.'],
-                otherImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['super-match-front.png', 'super-match-card.png', 'super-match-back.png'],
             },
 
             development: {
-                title: 'Development Process',
-                mainImage: 'coming-soon.png',
+                title: 'Development',
                 text: ['When it came to development, I realized the importance of booleans and if statements in general. I\'ve found since this project, actually, that I seem to have developed a habit of imagining the switch cases and other conditional checks I might write for games I\'m playing. Fortunately, I play a lot of solo games so nobody is bothered by the coding brain going off in the middle of a task... except for me...', 'While there are lots of ways I would rewrite this for clarity now, check out this conditional check I wrote for flipping a card. The first time I felt in control of JavaScript! Oh the memories...'],
-                otherImages: ['coming-soon.png'],
+                featuredImages: ['super-match-conditional.jpg'],
             },
         },
 
-        learnings: 'Despite having worked with JavaScript in a few minor assignments leading up to this project, I felt I really built up my chops during this development process in particular. Essentially I learned how to simplify and DRY before I apply my ideas so I could keep myself from having to rework the entire project just out of the pain it brought me to read the overcomplicated code. It was easy for me to get excited about this project, and extremely tempting to throw all my ideas down as soon as they came to me, but catching myself in these moments meant saving myself so much time and agony down the road debugging well-intentioned but oh, so severely broken code.',
+        learnings: ['Despite having worked with JavaScript in a few minor assignments leading up to this project, I felt I really built up my chops during this development process in particular. Essentially I learned how to simplify and DRY before I apply my ideas so I could keep myself from having to rework the entire project just out of the pain it brought me to read the overcomplicated code. It was easy for me to get excited about this project, and extremely tempting to throw all my ideas down as soon as they came to me, but catching myself in these moments meant saving myself so much time and agony down the road debugging well-intentioned but oh, so severely broken code.'],
         repo: false,
         repoLink: 'null',
         liveSite: 'https://sidney-engstrom.com/super-match',
@@ -207,7 +191,7 @@ export const projects = [
         alltech: ['HTML5', 'CSS3', 'JavaScript', 'jQuery'],
         feature: false,
         slug: 'super-match',
-        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['super-match/super-match-instructions.jpg', 'super-match/super-match-main.jpg', 'super-match/super-match-match.jpg', 'super-match/super-match-full.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 ]
