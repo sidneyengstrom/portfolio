@@ -71,6 +71,10 @@
         @media(min-width: 40rem) {
             bottom: 21rem;
         }
+
+        @media(min-height: 20rem) and (max-height: 66rem) {
+            bottom: 14rem;
+        }
  
         .screen {
             display: flex;
