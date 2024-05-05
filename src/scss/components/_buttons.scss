@@ -5,10 +5,14 @@ button {
     transition: $btn-transition--hover;
     border: var(--btn-primary);
     color: var(--foreground--main);
-
+    
     &:hover {
         border: var(--btn-secondary);
         color: var(--foreground--accent);
+
+        svg {
+            stroke: var(--foreground--accent);
+        }
     }
 
     &.secondary, &.active {
