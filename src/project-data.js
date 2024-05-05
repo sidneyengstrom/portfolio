@@ -69,13 +69,14 @@ export const projects = [
             development: {
                 title: 'Development Process',
                 mainImage: 'coming-soon.png',
-                text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development.' ],
+                text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development. While my personal style has since grown with my skill set, and despite launching this site only 5 months ago it already feels quite outdated, I remember feeling this great sense of creative freedom during the project - adding more and more fine details with every revision of the site. The development process overall really strengthened my keen eye for detail and was the kickstarter for the development of my personal style in terms of web design.' ],
                 otherImages: ['coming-soon.png'],
                 videos: ['coming-soon.mp4'],
             },
         },
 
         learnings: 'Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.',
+
         repo: false,
         repoLink: 'null',
         liveSite: 'https://sidney-engstrom.com/discover-ottawa',
@@ -88,19 +89,53 @@ export const projects = [
     },
 
     {
-        title: 'Vulcan Wastewater Solutions',
-        thumbsrc: 'vulcan-thumb.png',
-        thumbalt: 'Wastewater screen business website displaying call to action buttons and navigation.',
-        excerpt: 'Heavy duty wastewater screen business website.',
-        description: 'Vulcan is a heavy duty wastewater screen company website designed to inform and advise customers on the offered products and services.',
-        learnings: 'Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.',
-        repo: false,
-        repoLink: 'null',
-        liveSite: 'https://sidney-engstrom.com/vulcan/',
-        featuredTech: ['JavaScript', 'SASS'],
-        alltech: ['HTML5', 'SASS / SCSS', 'JavaScript'],
+        title: 'Sidney Engstrom Portfolio',
+        thumbsrc: 'coming-soon.png',
+        thumbalt: 'Coming soon placeholder image.',
+        excerpt: 'Personal web development portfolio.',
+        description: 'My personal portfolio was designed to display my strongest work, expertise and contact information to those who may be interested in getting to know me or working with me on design and development projects. Built with React and featuring many hand-coded animations, CSS (or, more specifically, SCSS) art pieces and a light and dark mode toggle, I hoped to show off not only my programming competencies but my creativity and eye for design.',
+
+        process: {
+            design: {
+                title:  'Design Process',
+                mainImage: 'coming-soon.png',
+                text: ['For the first iteration of my portfolio design, I decided to build the mockups in Adobe XD. As you\'ll see below, the first designs featured a lot more prominent colour than the current ones, which I ultimately decided to shift to more of an accent so the site would be a compliment to my featured projects rather than a distraction from them.', 'Below you\'ll see links to the style guide for my initial concept and the Figma file half-wireframe-half-mockup with some initial ideas for the final iteration. You can also have a look at the various versions of my landing page, starting with my very first build done at the start of my journey with the front-end development world.'],
+                otherImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+                links: {
+                    xd: 'https://xd.adobe.com/view/02ecd25e-b516-4b75-b87c-5dfd957dab03-57bf/?fullscreen',
+                    figma: 'https://www.figma.com/file/9NTVNbmS7yu5iCHwWKbWJQ/portfolio-wireframe-mockup?type=design&node-id=0%3A1&mode=design&t=f3OtMu6HjCtcGO7d-1',
+                }
+            },
+
+            prototyping: {
+                title: 'Prototyping Process',
+                mainImage: 'coming-soon.png',
+                text: ['While I didn\'t end up building a functioning prototype for my final redesign of the site, I did create one for the middle-most iteration. The prototyping process forced me to take a closer look at the UX implications of my design, and forced some changes for a smoother experience. One change which did carry through to the end of the project was the decision to have a visually interesting and artistic feature on the landing section of the site. While the exact design changed from bubbles to a computer desk scene, the intention to show off my creative abilities stayed the same throughout.', 'Below you can have a look at some of the interactive parts of the prototype or check out the XD file.'],
+                otherImages: ['coming-soon.png'],
+                videos: ['coming-soon.mp4', 'coming-soon.mp4'],
+                links: {
+                    xd: 'https://xd.adobe.com/view/875fa465-16e5-466c-a121-5880f46da6f3-d20c/?fullscreen',
+                }
+            },
+
+            development: {
+                title: 'Development Process',
+                mainImage: 'coming-soon.png',
+                text: ['After combining some of the best features from the two fleshed out iterations of my portfolio, I began diving into the development world. I decided to integrate some of the first version\'s \"upcoming projects\" concepts into the \"process\" section you\'re reading through now, walking those interested through some of my desicions and ideas throughout the various steps of creating my sites. I loved being able to take some time to create the art shown in the landing section, and was happy to be able to maintain organization of my SASS files and React components despite complicated integrations like this.'],
+            },
+        },
+
+        learnings: ['Being my first solo React project, and the first sizeable non-WordPress site I\'d worked on solo in general, this project taught me a lot about my personal style of designing, coding, and organizing. Not only did I get to make all the executive decisions for the process, forcing me to be more careful with my UX / UI as I wouldn\'t have another set of eyes on my work at all times, but I had to find strength in other areas outside of my normal comfort zone.', 'In group projects, I will generally take on a large portion of the styling and design, as I\'ve always felt most comfortable with that area of development, but working on this project by myself forced me to learn some (admittedly drawn out and painful) lessons about React. I found that tossing all of my project and skills information into well-organized data files allowed me to keep my React files clean, and is going to make updating the site significantly easier in the future.', 'Learning to create this kind of compartmentalized code for easy maintenance is going to serve me very well going forward, and I\'m really happy I decided to go this route for the project.'],
+
+        repo: true,
+        repoLink: 'https://github.com/sidneyengstrom/portfolio',
+        liveSite: 'https://sidney-engstrom.com',
+
+        featuredTech: ['React', 'SCSS'],
+        alltech: ['React', 'JavaScript', 'SCSS', 'Git / GitHub', 'Illustrator', 'Figma'],
         feature: true,
-        slug: 'vulcan',
+        slug: 'personal-portfolio',
+
         carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
         carouselAlt: ['Coming soon placeholder image'],
     },
@@ -110,11 +145,28 @@ export const projects = [
         thumbsrc: 'coming-soon.png',
         thumbalt: 'Coming soon placeholder image.',
         excerpt: 'Wedding photography business portfolio.',
+
         description: 'Details coming soon.',
+        process: {
+            design: {
+                title:  'Design Process',
+                mainImage: 'coming-soon.png',
+                text: ['Details coming soon.'],
+                otherImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+            },
+
+            development: {
+                title: 'Development Process',
+                mainImage: 'coming-soon.png',
+                text: ['Details coming soon.'],
+            },
+        },
+
         learnings: 'More info coming soon.',
         repo: false,
         repoLink: 'https://github.com/htpwebdesign/porterstudio-theme',
         liveSite: 'https://porterstudio.bcitwebdeveloper.ca',
+
         featuredTech: ['WordPress', 'SASS'],
         alltech: ['WordPress', 'HTML5', 'PHP', 'SASS / SCSS', 'JavaScript'],
         feature: false,
@@ -128,8 +180,26 @@ export const projects = [
         thumbsrc: 'match-thumb.png',
         thumbalt: 'Windows 95 desktop-themed website displaying Super Nintendo cartdige matching game.',
         excerpt: 'Retro Nintendo and Windows themed card matching game.',
+
         description: "Designed with an old school Windows 95 layout and old Super Nintendo cartridges instead of cards, this project was created for those craving a bit of nostalgia on the modern web.",
-        learnings: 'Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.',
+
+        process: {
+            design: {
+                title:  'Design Process',
+                mainImage: 'coming-soon.png',
+                text: ['Coming up with the design concept of this site was as simple as thinking about the kind of game aesthetics I have always loved - old Nintendo, Atari, and pretty much anything pixel art. Initially, I had considered creating a full-fledged pixel art game from scratch, though too pressed for time during the creation of this particular project, that idea has stuck with me... stay tuned ;)', 'Below you\'ll see some of my very first concepts for the game design, and where it ended up.'],
+                otherImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+            },
+
+            development: {
+                title: 'Development Process',
+                mainImage: 'coming-soon.png',
+                text: ['When it came to development, I realized the importance of booleans and if statements in general. I\'ve found since this project, actually, that I seem to have developed a habit of imagining the switch cases and other conditional checks I might write for games I\'m playing. Fortunately, I play a lot of solo games so nobody is bothered by the coding brain going off in the middle of a task... except for me...', 'While there are lots of ways I would rewrite this for clarity now, check out this conditional check I wrote for flipping a card. The first time I felt in control of JavaScript! Oh the memories...'],
+                otherImages: ['coming-soon.png'],
+            },
+        },
+
+        learnings: 'Despite having worked with JavaScript in a few minor assignments leading up to this project, I felt I really built up my chops during this development process in particular. Essentially I learned how to simplify and DRY before I apply my ideas so I could keep myself from having to rework the entire project just out of the pain it brought me to read the overcomplicated code. It was easy for me to get excited about this project, and extremely tempting to throw all my ideas down as soon as they came to me, but catching myself in these moments meant saving myself so much time and agony down the road debugging well-intentioned but oh, so severely broken code.',
         repo: false,
         repoLink: 'null',
         liveSite: 'https://sidney-engstrom.com/super-match',
