@@ -69,13 +69,13 @@ export const projects = [
             development: {
                 title: 'Development Process',
                 mainImage: 'coming-soon.png',
-                text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development. While my personal style has since grown with my skill set, and despite launching this site only 5 months ago it already feels quite outdated, I remember feeling this great sense of creative freedom during the project - adding more and more fine details with every revision of the site. The development process overall really strengthened my keen eye for detail and was the kickstarter for the development of my personal style in terms of web design.' ],
+                text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development. While my personal style has since grown with my skill set, and despite launching this site only 5 months ago it already feels quite outdated, I remember feeling this great sense of creative freedom during the project - adding more and more fine details with every revision of the site.', 'The development process overall really strengthened my keen eye for detail and was the kickstarter for the development of my personal style in terms of web design.' ],
                 otherImages: ['coming-soon.png'],
                 videos: ['coming-soon.mp4'],
             },
         },
 
-        learnings: 'Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.',
+        learnings: ['Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.'],
 
         repo: false,
         repoLink: 'null',
@@ -162,7 +162,7 @@ export const projects = [
             },
         },
 
-        learnings: 'More info coming soon.',
+        learnings: ['More info coming soon.'],
         repo: false,
         repoLink: 'https://github.com/htpwebdesign/porterstudio-theme',
         liveSite: 'https://porterstudio.bcitwebdeveloper.ca',
@@ -199,7 +199,7 @@ export const projects = [
             },
         },
 
-        learnings: 'Despite having worked with JavaScript in a few minor assignments leading up to this project, I felt I really built up my chops during this development process in particular. Essentially I learned how to simplify and DRY before I apply my ideas so I could keep myself from having to rework the entire project just out of the pain it brought me to read the overcomplicated code. It was easy for me to get excited about this project, and extremely tempting to throw all my ideas down as soon as they came to me, but catching myself in these moments meant saving myself so much time and agony down the road debugging well-intentioned but oh, so severely broken code.',
+        learnings: ['Despite having worked with JavaScript in a few minor assignments leading up to this project, I felt I really built up my chops during this development process in particular. Essentially I learned how to simplify and DRY before I apply my ideas so I could keep myself from having to rework the entire project just out of the pain it brought me to read the overcomplicated code. It was easy for me to get excited about this project, and extremely tempting to throw all my ideas down as soon as they came to me, but catching myself in these moments meant saving myself so much time and agony down the road debugging well-intentioned but oh, so severely broken code.'],
         repo: false,
         repoLink: 'null',
         liveSite: 'https://sidney-engstrom.com/super-match',
