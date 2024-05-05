@@ -1,5 +1,5 @@
 #app-wrap, header {
-    section:not(#carousel):not(#project-info) {
+    section:not(#carousel):not(#project-info):not(#see-more-projects) {
         padding: 0 $padding-sm;
         margin-bottom: 3rem;
 
