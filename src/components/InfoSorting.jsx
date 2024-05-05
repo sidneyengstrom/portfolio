@@ -75,7 +75,21 @@ function InfoSorting() {
                         <h2>The Process</h2>
                         {project.process.design && (
                             <>
-                                <button className='accordion' onClick={() => setActiveProcess('design')}>Design</button>
+                                <button className='accordion' onClick={() => setActiveProcess(prevState => prevState === 'design' ? null : 'design')}>
+                                    Design
+                                    {activeProcess === 'design' ? (
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    ) : (
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12 5l0 14" />
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    )}
+                                    </button>
                                 {activeProcess === 'design' && (
                                     <DesignProcess project={project} />
                                 )}
@@ -84,7 +98,22 @@ function InfoSorting() {
 
                         {project.process.prototyping && (
                             <>
-                                <button className='accordion' onClick={() => setActiveProcess('prototyping')}>Prototyping</button>
+                                <button className='accordion' onClick={() => setActiveProcess(prevState => prevState === 'prototyping' ? null : 'prototyping')}>
+                                    Prototyping
+                                    {activeProcess === 'prototyping' ? (
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    ) : (
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12 5l0 14" />
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    )}
+                                    
+                                    </button>
                                 {activeProcess === 'prototyping' && (
                                     <PrototypingProcess project={project} />
                                 )}
@@ -93,7 +122,21 @@ function InfoSorting() {
 
                         {project.process.development && (
                             <>
-                                <button className='accordion' onClick={() => setActiveProcess('development')}>Development</button>
+                                <button className='accordion' onClick={() => setActiveProcess(prevState => prevState === 'development' ? null : 'development')}>
+                                    Development
+                                    {activeProcess === 'development' ? (
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    ) : (
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M12 5l0 14" />
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    )}
+                                    </button>
                                 {activeProcess === 'development' && (
                                     <DevelopmentProcess project={project} />
                                 )}
