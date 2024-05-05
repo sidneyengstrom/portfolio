@@ -22,12 +22,8 @@
                 grid-template-columns: 1fr;
                 align-items: center;
                 @media(min-width: 37.5rem) {
-                    &.grid-col-2 {
+                    &.grid-col-2, &.grid-col-3 {
                         grid-template-columns: repeat(2, 1fr);
-                    }
-        
-                    &.grid-col-3 {
-                        grid-template-columns: repeat(3, 1fr);
                     }
         
                     &.grid-col-4 {
@@ -40,8 +36,14 @@
                 }
                 
                 img {
-                    border: var(--btn-primary);
+                    border-radius: 10px;
+                    box-shadow: var(--box-shadow--mild);
                 }
+            }
+
+            .links {
+                display: flex;
+                gap: 1rem;
             }
         }
 
