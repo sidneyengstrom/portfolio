@@ -12,21 +12,19 @@ export const projects = [
                 title:  'Designing',
                 text: ['Starting with an empty Photoshop file and a dream, I started work on my first high fidelity mockup for the movie database site. After spending a significant amount of time deliberating over a colour scheme, I ultimately landed on a reference to an artistic rendition of the cover of \'The Great Gatsby\', and after some tweaks to ensure readability and modernity, I was off.', 
                 'Below you\'ll see my first concepts for the landing section and about page of the site.'],
-                featuredImages: ['coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['take-five-home-original.jpg', 'take-five-about-original.jpg'],
             },
 
             prototyping: {
                 title: 'Prototyping',
                 text: ['The start of the prototyping process brought about the beginning of the team-built portion of the project, which meant combining the best parts of our designs to create the most effective user interface. Most of my work was focused on desktop size design and functionality in Adobe XD.', 'Below you\'ll see how we cohesively brought our designs together and brought them to life with interactive features.'],
-                featuredImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4'],
+                featuredImages: ['take-five-prototype.jpg'],
+                videos: ['take-five-prototype.mp4'],
             },
 
             development: {
                 title: 'Development',
-                text: ['Jumping from creating fairly simple, static web pages to building a dynamic, API-integrated React app was daunting to say the least. Maintaining organization of so many moving pieces, not to mention keeping track of everybody\'s work at all times to prevent Git conflicts, was possibly the hardest learning curve. However, following DRY principles and sticking closely to our mockup and prototype designs kept us on track to completion.', 'Below you\'ll see some screenshots of our final product.' ],
-                featuredImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4'],
+                text: ['Jumping from creating fairly simple, static web pages to building a dynamic, API-integrated React app was daunting to say the least. Maintaining organization of so many moving pieces, not to mention keeping track of everybody\'s work at all times to prevent Git conflicts, was possibly the hardest learning curve. However, following DRY principles and sticking closely to our mockup and prototype designs kept us on track to completion.'],
             },
         },
 
@@ -43,7 +41,7 @@ export const projects = [
 
         feature: true,
 
-        carouselImgs: ['moviedb-main.png', 'take-five-posters.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['take-five/take-five-main.jpg', 'take-five/take-five-posters.jpg', 'take-five/take-five-list.jpg', 'take-five/take-five-details.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 
@@ -59,14 +57,12 @@ export const projects = [
             design: {
                 title:  'Designing',
                 text: ['Having travelled to Ottawa a handful of times prior to creating this website, I was hoping to be able to incorporate a bit of that experience into my designs. Something I found interesting about the city was its ability to completely shift energy between day and night. I decided to incorporate this into the design by giving the user the option to choose between looking at a day or night-themed gallery page.', 'Below you can see how I implemented this into the design.'],
-                featuredImages: ['coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['discover-ottawa-prompt.jpg', 'discover-ottawa-day.jpg', 'discover-ottawa-night.jpg'],
             },
 
             development: {
                 title: 'Development',
                 text: ['Being my first real web project, Discover Ottawa holds a special place in my heart as the one that launched my love of styling in development. While my personal style has since grown with my skill set, and despite launching this site only 5 months ago it already feels quite outdated, I remember feeling this great sense of creative freedom during the project - adding more and more fine details with every revision of the site.', 'The development process overall really strengthened my keen eye for detail and was the kickstarter for the development of my personal style in terms of web design.' ],
-                featuredImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4'],
             },
         },
 
@@ -79,7 +75,7 @@ export const projects = [
         alltech: ['HTML5', 'CSS3', 'JavaScript', 'Illustrator'],
         feature: true,
         slug: 'discover-ottawa',
-        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['discover-ottawa/discover-ottawa-main.jpg', 'discover-ottawa/discover-ottawa-cards.jpg', 'discover-ottawa/discover-ottawa-gallery.jpg', 'discover-ottawa/discover-ottawa-ac.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 
@@ -177,13 +173,13 @@ export const projects = [
             design: {
                 title:  'Designing',
                 text: ['Coming up with the design concept of this site was as simple as thinking about the kind of game aesthetics I have always loved - old Nintendo, Atari, and pretty much anything pixel art. Initially, I had considered creating a full-fledged pixel art game from scratch, though too pressed for time during the creation of this particular project, that idea has stuck with me... stay tuned ;)', 'Below you\'ll see some of my very first concepts for the game design, and where it ended up.'],
-                featuredImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['super-match-front.png', 'super-match-card.png', 'super-match-back.png'],
             },
 
             development: {
                 title: 'Development',
                 text: ['When it came to development, I realized the importance of booleans and if statements in general. I\'ve found since this project, actually, that I seem to have developed a habit of imagining the switch cases and other conditional checks I might write for games I\'m playing. Fortunately, I play a lot of solo games so nobody is bothered by the coding brain going off in the middle of a task... except for me...', 'While there are lots of ways I would rewrite this for clarity now, check out this conditional check I wrote for flipping a card. The first time I felt in control of JavaScript! Oh the memories...'],
-                featuredImages: ['coming-soon.png'],
+                featuredImages: ['super-match-conditional.jpg'],
             },
         },
 
@@ -195,7 +191,7 @@ export const projects = [
         alltech: ['HTML5', 'CSS3', 'JavaScript', 'jQuery'],
         feature: false,
         slug: 'super-match',
-        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['super-match/super-match-instructions.jpg', 'super-match/super-match-main.jpg', 'super-match/super-match-match.jpg', 'super-match/super-match-full.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 ]
