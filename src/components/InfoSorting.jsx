@@ -72,27 +72,18 @@ function InfoSorting() {
                 )}
                 {activeSection === 'process' && (
                     <div className='process'>
-                        <h2>The Process</h2>
+                        <h2>Learn about my process -</h2>
+                        <div className='process-accordion'>
                         {project.process.design && (
                             <>
                                 <button className='accordion' onClick={() => setActiveProcess(prevState => prevState === 'design' ? null : 'design')}>
                                     Design
-                                    {activeProcess === 'design' ? (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M5 12l14 0" />
-                                        </svg>
-                                    ) : (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M12 5l0 14" />
-                                            <path d="M5 12l14 0" />
-                                        </svg>
-                                    )}
-                                    </button>
-                                {activeProcess === 'design' && (
-                                    <DesignProcess project={project} />
-                                )}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className={`icon ${activeProcess === 'design' ? 'active' : ''}`} width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M6 9l6 6l6 -6" />
+                                    </svg>
+                                </button>
+                                <DesignProcess project={project} activeProcess={activeProcess} />
                             </>
                         )}
 
@@ -100,23 +91,12 @@ function InfoSorting() {
                             <>
                                 <button className='accordion' onClick={() => setActiveProcess(prevState => prevState === 'prototyping' ? null : 'prototyping')}>
                                     Prototyping
-                                    {activeProcess === 'prototyping' ? (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M5 12l14 0" />
-                                        </svg>
-                                    ) : (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M12 5l0 14" />
-                                            <path d="M5 12l14 0" />
-                                        </svg>
-                                    )}
-                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" className={`icon ${activeProcess === 'prototyping' ? 'active' : ''}`} width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M6 9l6 6l6 -6" />
+                                    </svg>
                                     </button>
-                                {activeProcess === 'prototyping' && (
-                                    <PrototypingProcess project={project} />
-                                )}
+                                <PrototypingProcess project={project} activeProcess={activeProcess} />
                             </>
                         )}
 
@@ -124,24 +104,15 @@ function InfoSorting() {
                             <>
                                 <button className='accordion' onClick={() => setActiveProcess(prevState => prevState === 'development' ? null : 'development')}>
                                     Development
-                                    {activeProcess === 'development' ? (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M5 12l14 0" />
-                                        </svg>
-                                    ) : (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <path d="M12 5l0 14" />
-                                            <path d="M5 12l14 0" />
-                                        </svg>
-                                    )}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className={`icon ${activeProcess === 'development' ? 'active' : ''}`} width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M6 9l6 6l6 -6" />
+                                    </svg>
                                     </button>
-                                {activeProcess === 'development' && (
-                                    <DevelopmentProcess project={project} />
-                                )}
+                                <DevelopmentProcess project={project} activeProcess={activeProcess} />
                             </>
                         )}
+                        </div>
                     </div>
                 )}
             </div>

@@ -1,6 +1,6 @@
-function PrototypingProcess({ project }) {
+function PrototypingProcess({ project, activeProcess }) {
     return (
-        <div className='panel'>
+        <div className={`panel ${activeProcess === 'prototyping' ? 'active' : ''}`}>
             {project.process.prototyping.text.map((prototypingParagraph, index) => (
                 <p key={index}>{prototypingParagraph}</p>
             ))}
