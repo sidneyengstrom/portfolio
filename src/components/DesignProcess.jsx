@@ -9,7 +9,7 @@ function DesignProcess({ project, activeProcess }) {
             {project.process.design.featuredImages && (
                 <div className={`featured-image-wrapper grid-col-${project.process.design.featuredImages.length + (project.process.design.videos ? project.process.design.videos.length : 0)}`}>
                     {project.process.design.featuredImages.map((featuredImage, index) => (
-                        <img src={`/src/assets/images/${featuredImage}`} key={index} alt={`Featured Image ${index}`} />
+                        <img src={`/src/assets/images/process/${featuredImage}`} key={index} alt={`Featured Image ${index}`} />
                     ))}
                     {project.process.design.videos && project.process.design.videos.map((video, index) => (
                         <video key={index}>
