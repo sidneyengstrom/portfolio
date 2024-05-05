@@ -1,6 +1,6 @@
-function DesignProcess({ project }) {
+function DesignProcess({ project, activeProcess }) {
     return (
-        <div className='panel'>
+        <div className={`panel ${activeProcess === 'design' ? 'active' : ''}`}>
             <div className='text'>
                 {project.process.design.text.map((designParagraph, index) => (
                     <p key={index}>{designParagraph}</p>
