@@ -8,7 +8,7 @@ function PrototypingProcess({ project, activeProcess }) {
             {project.process.prototyping.featuredImages && (
                 <div className={`featured-image-wrapper grid-col-${project.process.prototyping.featuredImages.length + (project.process.prototyping.videos ? project.process.prototyping.videos.length : 0)}`}>
                     {project.process.prototyping.featuredImages.map((featuredImage, index) => (
-                        <img src={`/src/assets/images/${featuredImage}`} key={index} alt={`Featured Image ${index}`} />
+                        <img src={`/src/assets/images/process/${featuredImage}`} key={index} alt={`Featured Image ${index}`} />
                     ))}
                     {project.process.prototyping.videos && project.process.prototyping.videos.map((video, index) => (
                         <video key={index}>
