@@ -1,17 +1,20 @@
 #app-wrap, header {
-    section:not(#carousel):not(#project-info):not(#see-more-projects) {
+    section:not(#carousel):not(#project-info) {
         padding: 0 $padding-sm;
         margin-bottom: 3rem;
 
         @media(min-width: 60rem) {
-            &:not(#about) &:not(#skills) {
+            &:not(#about) &:not(#skills):not(#see-more-projects) {
                 padding: 0 $padding-m;
             }
 
         }
 
         @media(min-width: 100rem) {
-            padding: 0 $padding-lg;
+            &:not(#see-more-projects) {
+                padding: 0 $padding-lg;
+            }
+
         }
     }
 
