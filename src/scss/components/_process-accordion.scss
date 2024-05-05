@@ -19,25 +19,28 @@
             .featured-image-wrapper {
                 display: grid;
                 gap: 0.5rem;
-    
-                &.grid-col-1 {
-                    grid-template-columns: 1fr;
+                grid-template-columns: 1fr;
+                align-items: center;
+                @media(min-width: 37.5rem) {
+                    &.grid-col-2 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+        
+                    &.grid-col-3 {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+        
+                    &.grid-col-4 {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+        
+                    &.grid-col-5 {
+                        grid-template-columns: repeat(5, 1fr);
+                    }
                 }
-    
-                &.grid-col-2 {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-    
-                &.grid-col-3 {
-                    grid-template-columns: repeat(3, 1fr);
-                }
-    
-                &.grid-col-4 {
-                    grid-template-columns: repeat(4, 1fr);
-                }
-    
-                &.grid-col-5 {
-                    grid-template-columns: repeat(5, 1fr);
+                
+                img {
+                    border: var(--btn-primary);
                 }
             }
         }
