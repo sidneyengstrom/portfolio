@@ -11,7 +11,7 @@ function PrototypingProcess({ project, activeProcess }) {
                         <img src={`/src/assets/images/process/${featuredImage}`} key={index} alt={`Featured Image ${index}`} />
                     ))}
                     {project.process.prototyping.videos && project.process.prototyping.videos.map((video, index) => (
-                        <video key={index}>
+                        <video key={index} autoplay loop muted>
                             <source src={`/src/assets/videos/process/${video}`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
