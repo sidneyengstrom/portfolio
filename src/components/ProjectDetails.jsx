@@ -1,8 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '../project-data.js';
-import FeaturedCarousel from './FeaturedCarousel.jsx';
-import InfoSorting from './InfoSorting.jsx';
+import FeaturedCarousel from './FeaturedCarousel';
+import InfoSorting from './InfoSorting';
+import SeeMoreProjects from './SeeMoreProjects';
 
 function ProjectDetails() {
   
@@ -17,6 +18,7 @@ function ProjectDetails() {
     <div className="project-page-wrapper">
       <FeaturedCarousel />
       <InfoSorting />
+      <SeeMoreProjects currentProjectSlug={slug} />
     </div>
   );
 }

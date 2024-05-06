@@ -4,11 +4,17 @@
         margin-bottom: 3rem;
 
         @media(min-width: 60rem) {
-            padding: 0 $padding-m;
+            &:not(#about) &:not(#skills):not(#see-more-projects) {
+                padding: 0 $padding-m;
+            }
+
         }
 
         @media(min-width: 100rem) {
-            padding: 0 $padding-lg;
+            &:not(#see-more-projects) {
+                padding: 0 $padding-lg;
+            }
+
         }
     }
 

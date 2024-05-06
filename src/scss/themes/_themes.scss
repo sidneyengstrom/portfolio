@@ -20,6 +20,7 @@ body {
 
     --decor--accent: #{$foreground--med};
     --svg-stroke: #{$foreground--main};
+    --notification: #{$text-dark};
 }    
 
 
@@ -43,4 +44,5 @@ body.light-mode {
 
     --svg-stroke: #{$background-light--main};
     --decor--accent: #{$foreground-light--main};
+    --notification: #{$background-light--main};
 }

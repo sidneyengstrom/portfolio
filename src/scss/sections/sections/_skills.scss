@@ -1,8 +1,4 @@
 #root #skills {
-    @media(min-width: 60rem) {
-        padding-right: 0;
-    }
-
     .skill-wrapper {
         display: flex;
         flex-direction: column;
@@ -31,7 +27,7 @@
                 display: flex;
                 align-items: center;
                 gap: 0.65rem;
-                background-color: var(--foreground--med);
+                background-color: var(--reduced-foreground--med);
                 padding: 0.25rem 0.5rem;
                 border-radius: 0.4rem;
 

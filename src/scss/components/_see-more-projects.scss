@@ -1,0 +1,33 @@
+#see-more-projects {
+    margin-top: 5rem;
+    .project-thumbnails {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .card-bg {
+            p {
+                margin: 0.25rem;
+            }
+    
+            img {
+                border-radius: 0.4rem;
+                transition: all 0.5s ease;
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        @media(min-width: 31.25rem) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(min-width: 47rem) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
