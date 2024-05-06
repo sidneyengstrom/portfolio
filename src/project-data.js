@@ -70,7 +70,7 @@ export const projects = [
 
         repo: false,
         repoLink: 'null',
-        liveSite: 'https://sidney-engstrom.com/discover-ottawa',
+        liveSite: 'https://sidney-engstrom.com/ottawa-tourism',
         featuredTech: ['CSS', 'JavaScript'],
         alltech: ['HTML5', 'CSS3', 'JavaScript', 'Illustrator'],
         feature: true,
