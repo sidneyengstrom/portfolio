@@ -56,7 +56,7 @@ function Navigation() {
                         </>
                     )}
                 </ul>
-                <div className="menu" onClick={toggleNav}>
+                <div className="menu" onClick={toggleNav} role='button' aria-label="Menu">
                     <span className="bar"></span>
                 </div>
             </nav>
