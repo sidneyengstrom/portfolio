@@ -38,8 +38,8 @@ function LandingInfo () {
                 <Typewriter text={textToType} />
             </div>
             <div className={`cta ${isTyping ? '' : 'show'}`}>
-                <button className="primary cta">See my work</button>
-                <button className="secondary cta">Learn about me</button>
+                <p className="primary cta"><a href="#featured-work">See my work</a></p>
+                <p className="secondary cta"><a href="#about">Learn about me</a></p>
             </div>
         </div>
     )
