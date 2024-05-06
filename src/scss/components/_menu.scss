@@ -17,6 +17,14 @@ header {
             bottom: -200px;
             transition: bottom 0.65s ease, visibility 0.65s ease, opacity 0.25s ease;
             opacity: 0;
+
+            a {
+                color: #fff;
+
+                @media(min-width: 40rem) {
+                    color: var(--foreground--main);
+                }
+            }
         }
 
         .menu {
@@ -75,12 +83,12 @@ header {
                     background-color: transparent;
 
                     &::before {
-                        background-color: var(--foreground--main);
+                        background-color: #fff;
                         transform: rotate(45deg) translateY(9px) translateX(5px);
                     }
             
                     &::after {
-                        background-color: var(--foreground--main);
+                        background-color: #fff;
                         transform: rotate(-45deg) translateY(-9px) translateX(5px);
                     }
                 }
