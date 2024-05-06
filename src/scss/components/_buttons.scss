@@ -1,4 +1,4 @@
-button {
+button, .primary.cta, .secondary.cta {
     padding: 0.5rem;
     border-radius: 10px;
     background-color: #00000000;
@@ -15,11 +15,6 @@ button {
         }
     }
 
-    &.secondary, &.active {
-        border: var(--btn-secondary);
-        color: var(--foreground--accent);
-    }
-
     &:hover {
         animation: btnHover 0.65s ease-in-out;
         cursor: pointer;
@@ -28,4 +23,13 @@ button {
     @media(min-width: 70rem) {
         font-size: $text-m;
     }
+}
+
+p.secondary.cta, button.active, a.active {
+    border: var(--btn-secondary);
+
+    a {
+        color: var(--foreground--accent);
+    }
+
 }
