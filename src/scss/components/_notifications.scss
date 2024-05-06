@@ -1,7 +1,7 @@
 .notification {
     display: flex;
     overflow: hidden;
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: transform 0.35s ease-in-out;
     position: fixed;
     bottom: 1.75rem;
@@ -10,10 +10,14 @@
     background-color: var(--foreground--accent);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    color: $text-dark;
+    color: var(--notification);
     font-weight: 500;
     z-index: 100;
     box-shadow: var(--box-shadow);
+
+    svg {
+        stroke: var(--notification);
+    }
 
     &.clipboard {
         gap: 0.5rem;
