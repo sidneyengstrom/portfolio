@@ -66,7 +66,7 @@ export const projects = [
             },
         },
 
-        learnings: ['Here are some things I learned during this project :) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices maximus tristique. Ut sit amet ligula vel leo feugiat ultricies sit amet vel quam. Maecenas quam urna, luctus a posuere at, pharetra eget orci. Proin mollis pretium porttitor. Vestibulum feugiat scelerisque interdum.'],
+        learnings: ['Coming soon.'],
 
         repo: false,
         repoLink: 'null',
@@ -81,7 +81,7 @@ export const projects = [
 
     {
         title: 'Sidney Engstrom Portfolio',
-        thumbsrc: 'coming-soon-thumb.png',
+        thumbsrc: 'portfolio/portfolio-thumb.jpg',
         thumbalt: 'Coming soon placeholder image.',
         excerpt: 'Personal web development portfolio.',
         description: 'My personal portfolio was designed to display my strongest work, expertise and contact information to those who may be interested in getting to know me or working with me on design and development projects. Built with React and featuring many hand-coded animations, CSS (or, more specifically, SCSS) art pieces and a light and dark mode toggle, I hoped to show off not only my programming competencies but my creativity and eye for design.',
@@ -90,7 +90,7 @@ export const projects = [
             design: {
                 title:  'Designing',
                 text: ['For the first iteration of my portfolio design, I decided to build the mockups in Adobe XD. As you\'ll see below, the first designs featured a lot more prominent colour than the current ones, which I ultimately decided to shift to more of an accent so the site would be a compliment to my featured projects rather than a distraction from them.', 'Below you\'ll see links to the style guide for my initial concept and the Figma file half-wireframe-half-mockup with some initial ideas for the final iteration. You can also have a look at the various versions of my landing page, starting with my very first build done at the start of my journey with the front-end development world.'],
-                featuredImages: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+                featuredImages: ['portfolio-first.jpg', 'portfolio-second.jpg', 'portfolio-main.jpg'],
                 links: {
                     xd: 'https://xd.adobe.com/view/02ecd25e-b516-4b75-b87c-5dfd957dab03-57bf/?fullscreen',
                     figma: 'https://www.figma.com/file/9NTVNbmS7yu5iCHwWKbWJQ/portfolio-wireframe-mockup?type=design&node-id=0%3A1&mode=design&t=f3OtMu6HjCtcGO7d-1',
@@ -99,9 +99,7 @@ export const projects = [
 
             prototyping: {
                 title: 'Prototyping',
-                text: ['While I didn\'t end up building a functioning prototype for my final redesign of the site, I did create one for the middle-most iteration. The prototyping process forced me to take a closer look at the UX implications of my design, and forced some changes for a smoother experience. One change which did carry through to the end of the project was the decision to have a visually interesting and artistic feature on the landing section of the site. While the exact design changed from bubbles to a computer desk scene, the intention to show off my creative abilities stayed the same throughout.', 'Below you can have a look at some of the interactive parts of the prototype or check out the XD file.'],
-                featuredImages: ['coming-soon.png'],
-                videos: ['coming-soon.mp4', 'coming-soon.mp4'],
+                text: ['While I didn\'t end up building a functioning prototype for my final redesign of the site, I did create one for the middle-most iteration. The prototyping process forced me to take a closer look at the UX implications of my design, and forced some changes for a smoother experience. One change which did carry through to the end of the project was the decision to have a visually interesting and artistic feature on the landing section of the site. While the exact design changed from bubbles to a computer desk scene, the intention to show off my creative abilities stayed the same throughout.', 'Below you can have a look at some of the interactive parts of the prototype by checking out the XD file.'],
                 links: {
                     xd: 'https://xd.adobe.com/view/875fa465-16e5-466c-a121-5880f46da6f3-d20c/?fullscreen',
                 }
@@ -124,7 +122,7 @@ export const projects = [
         feature: true,
         slug: 'personal-portfolio',
 
-        carouselImgs: ['coming-soon.png', 'coming-soon.png', 'coming-soon.png', 'coming-soon.png'],
+        carouselImgs: ['portfolio/portfolio-main.jpg', 'portfolio/portfolio-light.jpg', 'portfolio/portfolio-carousel.jpg', 'portfolio/portfolio-process.jpg'],
         carouselAlt: ['Coming soon placeholder image'],
     },
 
